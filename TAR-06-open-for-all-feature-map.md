@@ -1,149 +1,156 @@
 # TAR-06 · Open for All: The Feature Map
 
-**Read [TAR-00](TAR-00-vision-and-requirements.md) first.** This document decides what the Open for All door actually contains. TAR-00 names the three doors: the RentOk tenant app, the white-label tenant app, and Open for All, the app for tenants whose landlord is not on RentOk at all. This document is the third door's feature list, sorted into what is essential, what supports it, what waits, and what we chose not to build, with the reasoning written down so anyone can retrace the decision.
+**Read [TAR-00](TAR-00-vision-and-requirements.md) first.** This document describes the Open for All door: the version of the app for anyone who lives on rent, whether or not their landlord uses RentOk. It is written as requirements: what the app does for the renter, moment by moment through their renting life. How any of it gets built, and what parts of it already exist inside RentOk's systems, belongs to engineering documents, not here.
 
-*Last updated 12 August 2026. Owner: Sanchay. Shaped in working sessions between Sanchay and Claude; every "exists today" claim below was checked against the actual systems, not remembered.*
+*Last updated 12 August 2026. Owner: Sanchay.*
 
 ---
 
-## Who this door serves
+## What this app is
 
-A tenant renting from a landlord who has never heard of RentOk. Nothing reaches this tenant through their property: no manager pushing the app, no dues appearing automatically, no food menu. Every feature must earn its place on naked value to the tenant alone. TAR-05 said it first: in this door the burden quadrant does not exist, it is value or nothing.
+A lifestyle app for everyone who lives on rent. Not a property app with extras: an app for the renting life itself, personalized to the person living it. A student in a PG, a professional in a flat, a couple in a gated society, a family in a rented house. Renting is how a huge part of India lives, and no one has built the app that treats that life as worth designing for.
 
-This door also has a second job. Every tenant in it is a possible bridge to a landlord we have not met. The features below are chosen so that acquisition of new tenants, and through them new landlords, happens as a byproduct of tenants helping themselves, never through nagging or contact harvesting. That rule is inherited from TAR-01 and is not revisited here.
+The idea underneath everything: **renting well should count for something.** Today a tenant who has paid rent on time for three years has nothing to show for it. This app witnesses the renting life, turns it into a record the tenant owns, and makes that record open doors. Think of how Cred took the most boring obligation in personal finance, paying a credit card bill, and made doing it into an identity. Rent is a bigger obligation, more emotional, and completely unwitnessed. We do the same for it, with one deliberate difference: no entry gate, no exclusive club. Everyone starts at zero and builds. The record is the status, and anyone can build one.
 
-## The sorting test
+## A renter's life, moment by moment
 
-Four buckets, one sentence each. Every feature in this document sits in exactly one.
+The app is organized the way the renting life is. Five moments. Every feature lives inside one.
 
-- **Spine**: remove it and the door stops making sense.
-- **Supporting**: makes the spine stronger or stickier. Ships without changing the thesis.
-- **Parked**: a good idea with the wrong dependencies today. Each parked item names the condition that revives it.
-- **Cut**: does not feed the spine, however good it sounds in isolation. Each cut names its reason.
+---
 
-## The spine
+### 1. Finding the next home
 
-The spine is a chain, not a list. Each link feeds the next:
+**Browse Properties** is the acquisition engine of this door: real properties, listed and kept current by the people who run them. Each property has its own page: photos, rooms, units and beds, pricing, amenities, reviews. From the page a renter can reserve a room, unit, or bed, pay a token amount, or book a visit: a physical tour, a video call, or a phone call.
 
-**Attract → Transact → Accumulate → Prove**
+There are two ways to browse, and the second is the hero of this app.
 
-A stranger arrives (attract), pays rent through us (transact), builds a verified history by doing so (accumulate), and turns that history into a portable credential that opens their next home (prove). Everything else in the door either feeds this chain or hangs off it.
+**The classic way**: search, filter, compare, shortlist. The marketplace as the world knows it, done well.
 
-### 1. The AI Broker (attract)
+**The AI Broker**: a conversation. The renter describes what they need the way they would to a broker in real life: budget, area, when they are moving, what matters to them. The Broker recommends, shows real options as cards inside the chat, answers questions honestly, and hands off into the marketplace flow: view the property, book the visit, reserve, right from the conversation.
 
-A conversational agent that finds a tenant their next home from RentOk's live inventory: thousands of real, owner-listed properties. The tenant states what they need in plain words, the Broker recommends, explains, and eventually acts.
+What makes the Broker different from every chat widget ever bolted onto a listing site, and why it is the USP of this door:
 
-**Why spine:** this is the front door and the hero feature. The differentiation is structural, not cosmetic. Listing sites run on scraped, stale, half-fake classifieds and answer engagement with a flood of broker calls. Our Broker runs on inventory that owners themselves keep live because their business runs on it. An AI that works only for the tenant, grounded in real rooms, is a pitch no listing site can copy by adding a chatbot.
+- **It works only for the renter.** It is not a salesperson for any property. It recommends what fits, says what is true, and flags what does not fit, even about the properties it shows.
+- **It knows the market.** Area intelligence, what rent really is in that lane, what tenants report about water, power, commute, and safety. It answers "is this a fair price" with data, not opinion.
+- **It knows the properties.** Live pricing, real availability, real photos, kept current by the property's own management.
 
-**The autonomy ladder, shipped in order:**
+No one in the Indian rental marketplace offers this. Listing sites answer interest with a flood of broker calls; our Broker answers with the truth and lets the renter decide.
 
-1. **Discover**: quiet recommendation inside browse. No chat needed. Good ranking using budget, location, and the persona model from TAR-01.
-2. **Understand**: answers questions in conversation. Is this rent fair for the lane. What should I check before I visit.
-3. **Decide together**: roommate matching, described under Community below.
-4. **Act, with consent**: drafts and sends applications packaged with the tenant's passport, schedules visits, chases the property for updates. Every action is previewed; nothing sends without a tap.
-5. **Negotiate, within limits the tenant sets**: the tenant states a ceiling, the Broker proposes terms inside it, backed by real comparable rents from our own network. Framed as fair-market, never adversarial: a landlord receiving an informed, reasonable offer is a warm first meeting with RentOk, not a bad one. The tenant approves every offer before it goes out.
+**Supporting the search**: property reviews and ratings on every listing · verified landlord and verified property badges · scam and fake-listing protection · visit notes and side-by-side comparison of shortlisted places, so the renter who saw six flats remembers which one had the geyser.
 
-*Verified: the booking bot agent this builds on already exists in our systems. Also verified, honestly: the recommendation engine behind it is thin today, a plain room catalog plus a log that nothing reads back. Recommendation quality is real work to build, not a switch to flip.*
+**The application: the Tenancy Passport.** The moment a renter reserves, pays a token, or books a visit, they become a lead for that property, and the property decides. The passport (described fully in moment 4) is what they decide with. The renter builds it once; it attaches to every request automatically. No more sending the same documents over WhatsApp to every landlord, different documents for each one. One passport, reusable everywhere, and the renter chooses what each share includes.
 
-Legal review of agent-and-broker licensing rules happens before the Negotiate rung ships, not before the feature exists. The Broker works only for the tenant and takes no commission from the deal, which places it outside the usual definition of a broker, but that gets confirmed by counsel, not assumed.
+---
 
-### 2. The free public tools (attract)
+### 2. Moving in
 
-A public web hub, no login, no install: rent receipt generator (HRA compliant, from details the visitor types in), state-aware tenant rights checker, rent agreement checker, locality rent pages, property review pages.
+**The rent agreement, before signing.** The renter uploads or receives the draft agreement and the **AI Lawyer** reviews it: an agent that knows the tenancy law that actually applies in that state, flags one-sided clauses in either direction, landlord-sided or tenant-sided, explains every clause in plain words, and answers rights questions any time. It always says which state's law it is applying, and says plainly when it does not know.
 
-**Why spine:** this door starts with zero installed base and no property pushing the app. These tools are how strangers find us. Each one answers a search people already type in volume, at high intent, at a specific moment of need: receipts every tax season, rights the week a deposit goes missing, agreement checks the day before signing. One mechanic runs through all of them: give the useful slice away free and public; the app is where it becomes automatic, saved, and connected to everything else.
+**Agreement creation**: for renters who need an agreement made, the app creates one, with stamping and signing handled through partners.
 
-The receipt generator has a quiet second audience: receipts travel to employers for HRA claims, which puts our name on a legitimate document inside companies we have never sold to.
+**Verification**: identity verification and background check, done once, paid once, reusable in the passport across every future application.
 
-### 3. The rent payment rail (transact and accumulate)
+**The move-in record.** The renter walks the room with their camera. The app extracts everything from the video: what items are there, their condition, the meter reading. The renter confirms the list, and the app produces a proper condition report. If the landlord participates, both sides sign it: an OTP-based sign included in the experience, or an Aadhaar-based digital signature as a paid option. If the landlord never participates, the report still stands as the renter's own dated, structured proof. Either way it goes into the vault, and it is what makes the deposit conversation at move-out a matter of record instead of memory.
 
-The tenant pays their rent through the app to a landlord who is not on RentOk. The landlord receives a normal bank transfer, with our name on it.
+**Money help at move-in**: the move-in lump sum is the hardest cheque of the renting life. Zero-deposit and pay-in-parts offers from partners, matched to the renter's record and credit score. A true-cost calculator so nobody is surprised by deposit plus advance plus brokerage plus movers.
 
-**Why spine:** this is the infrastructure link, and the single most consequential build in the door. Five things resolve at once when it exists. Rent history becomes verified instead of self-claimed, which is the difference between a passport that proves and a passport that asserts. Receipts generate themselves. A future credit score becomes honest. Every transaction carries revenue. And every payout lands in a landlord's account as the warmest possible introduction to RentOk: money, on time, with a name attached.
+**Getting there**: movers and packers, storage between homes, through partners.
 
-This is also the riskiest build: payment aggregator integration, landlord-side KYC, and compliance review for person-to-person rent flows. We accept that cost knowingly, because without the rail the Accumulate link of the chain is missing and the passport below is a claims document.
+---
 
-### 4. The Tenancy Passport (prove)
+### 3. Living on rent
 
-One portable, shareable credential: the tenant's verified rental identity, shared with any landlord as a tenancy application. The tenant pays for verification once and reuses it everywhere. Four layers, clearly labeled so a landlord always knows what is verified and what is claimed:
+The everyday layer. This is where the app earns the monthly open, and where most of its personality lives.
 
-| Layer | What it holds | Who triggers it | Trust level |
-|---|---|---|---|
-| Self-attested | History the tenant types in | Anyone | Lowest, labeled as unverified |
-| RentOk-witnessed | Payment history, on-time streaks, ratings received at RentOk properties, move-in and move-out condition records | Automatic for anyone who has ever been a RentOk tenant, any door; grows through the rail for everyone else | High. RentOk vouches, not just displays |
-| Third-party verified | Aadhaar eKYC, background and court-record check | Tenant pays once, reuses across applications | Highest, an external authority stands behind it |
-| Showcase | LinkedIn, Twitter, Instagram, anything the tenant chooses to link | Tenant links, and chooses per share what to include | Not a trust signal, a presentation layer. Entirely the tenant's choice |
+**The money surface.** One connected module, not five features:
 
-**Why spine:** the passport is what the whole door walks toward. It is the product the record becomes, the thing the tenant owns, upgrades, and shares. Every share puts a credible RentOk document in front of a landlord we have never met. For RentOk alumni it arrives pre-filled: their history with us becomes a credential they carry out the door, which is also the single best reason for a former tenant to come back.
+- **Rent, handled.** The renter sets up their rent once: landlord details, bank details, GST if any, amount, due date. The app reminds on time, every month. Paying happens the renter's way: through the app by card or gateway, or through their own UPI app, with the app recording the payment either way. Nobody is forced through our rails to get the benefit of the record.
+- **The receipt, automatic.** Every recorded payment produces a proper HRA-compliant rent receipt, ready for the office, every month, without asking.
+- **Bills.** Electricity, gas, broadband, DTH, mobile, paid in the app through BBPS.
+- **Split.** Rent and bills split between flatmates, settled in the app or recorded from outside it, with the ledger kept honest either way.
+- **Expenses and budget.** Everything above records itself, so the expense tracker fills in as a byproduct of living, not as homework. On top of it: a budget for the renting life, personalized by what kind of renter this is. Other apps charge for this; here it comes with the life.
 
-*Verified: management already rates tenants at move-out today, with remarks, rating chips, and a blacklist flag. Surfacing that into the passport is aggregation of existing data, not new collection.*
+**The document vault.** The renting life generates paper, and the vault keeps it: the agreement, receipts, the move-in report, KYC, landlord details, payment history. Upload the rent agreement and the app reads it: notice period, lock-in, agreement end date, and sets the reminders that protect the renter from each. Nothing expires silently.
 
-The far horizon of this link, named so it does not get lost: reporting verified rent history to the actual credit bureaus, so rent builds credit the way a loan does. That is a heavy, regulated build and sits in Parked, but it is the answer to why the passport matters so much.
+**The maintenance log.** A private, dated record of everything that breaks and every time the landlord was told. Photos, dates, what happened. Not a complaint system, there is no manager on the other end here: a record. Records win deposit conversations.
 
-## The AI family
+**The community: the Flat and Flatmate board.** Where the city's renters already are, but verified. People post rooms available and rooms wanted, the way the locality Facebook and WhatsApp groups work today, except here identity is real. Members verify themselves and carry a verified tag; unverified members can browse and post but the tag difference is visible. Members can share their passports with each other, which turns the terrifying stranger-roommate decision into an informed one, and compatibility matching helps people find flatmates whose lives actually fit: schedules, food, guests, cleanliness. The peer-to-peer marketplace lives here too: the mattress, the fridge, the desk, sold to the next renter in the same locality instead of abandoned.
 
-Three agents share one infrastructure and one conversational surface, but have deliberately separate jobs. Keeping them separate keeps each one honest about what it is for.
+**Local services.** The renter with no property manager has nobody to call. A curated directory of partnered services fills that gap: cleaning, repairs, maid, cook, tiffin, laundry, doctor visits. Verified brokers appear here too, tagged verified when RentOk has verified them, tagged plainly when not. Partner offers live here as well: tenant insurance, medical insurance, and whatever brands earn a place. Everything in this layer is chosen, not scraped; a directory of everyone is a directory of no one.
 
-- **The Broker** (spine, above) finds and secures homes. It does not do legal analysis.
-- **The AI Lawyer** (supporting) reviews rent agreements against the tenancy law that actually applies in that state, flags one-sided clauses in either direction, tenant-sided or landlord-sided, and answers rights questions. It must know which state's law applies and say plainly when it does not have that state loaded, because a wrong "this clause is illegal" does real damage. The Model Tenancy Act is a template states adopt in versions, not one national law, so the Lawyer is built on the actual statute text per state.
-- **The Trip Planner** (supporting) is a light itinerary assistant: tell it where you are going and it plans the trip. In the RentOk and white-label doors this same feature grows teeth, connecting to guest management, entry and exit approval, and food billing, which exist there and depend on each other. In this door it is deliberately simple, and cheap to include because the agent infrastructure already exists for the other two.
+**The trip planner.** A light AI itinerary assistant: tell it where you are going, get a plan. One of the small pleasures that make this a lifestyle app rather than a filing cabinet.
 
-**Why the Lawyer is supporting, not spine:** it is a trust engine and a real differentiator, and it is the strongest candidate for promotion to a second hero. But a tenant who never opens it still gets the full spine value, which is the test. It also powers the agreement checker in the public tools, so it earns attention early.
+---
 
-## Supporting features, grouped
+### 4. Being known: the Tenancy Passport
 
-| Group | Contains | Why it supports |
+The heart of the door. One portable credential that says: this is who I am as a tenant, and here is the proof.
+
+**Four layers, clearly labeled, so anyone reading it knows exactly what is verified and what is claimed:**
+
+| Layer | What it holds | How it gets there |
 |---|---|---|
-| Browse trust layer | Property reviews, verified landlord badge, scam and fake-listing detection, visit notes and compare | Makes the Broker's recommendations trustworthy. Reviews and badges are facets of browsing, not separate products. The verified landlord badge is also the mirror of the passport: a low-commitment first RentOk touchpoint for a landlord who wants to attract careful tenants. |
-| Locality truth layer | Neighborhood intelligence merged with the rent index: what rent really is lane by lane, plus water, power cuts, commute, safety after dark, crowd-sourced from tenants | Feeds the Broker's fairness answers and the public rent pages. It is a data layer with two faces, one inside the app, one public. |
-| The secure-it flow | Digital check-in (the existing webcheckin product, merged in fully), rental agreement creation, stamping partner, eKYC, background verification | Mostly exists already across our products. This door assembles it end to end. Table stakes done well. |
-| The money module | Bill payments over BBPS, splitting rent and utilities between roommates, expense and budget view | One module, not three. Its edge over standalone expense apps is that tracking is a byproduct of paying, not manual entry, which is exactly where standalone trackers lose their users. Adds commission revenue on every bill and a natural paid tier later. Ships after the rail, which it depends on. |
-| The deposit arc | Move-in and move-out condition documentation (one feature, two moments, living inside the passport), private maintenance log, auto-assembled evidence packet, legal help partner | The advocacy asset. Deposit disputes are the loudest exit pain in Indian renting, and disputes are won on dated evidence, not on finding a lawyer faster. The app holds the photos, payments, and complaint trail already; assembling them when a dispute starts is the product. "This app got my deposit back" is the strongest sentence a tenant can say about us. |
-| Community | The Flat and Flatmate board (modeled on the locality Facebook and WhatsApp groups where this already happens: people posting rooms free and rooms wanted), roommate compatibility matching, peer-to-peer marketplace for furniture and household goods | Real network effects, real cold-start risk, so it launches city by city where the RentOk network is already dense. Roommate matching between strangers is a safety feature before it is a convenience feature, so matches require the passport's verified layer, which also gives verification a second reason to be worth paying for. |
-| Local services directory | Partnered home services: cleaning, repairs, maid, chef, tiffin, movers, storage between homes | A door-1 tenant raises a complaint and a manager responds. A door-3 tenant has nobody to call. Partners fill that gap and pay referral revenue. Curated partners, not a directory of everyone. |
-| Small utilities | Rent due reminders, notice period tracker with a template letter, address proof from agreement plus receipts, HRA and tax helper | Each is small, cheap, and comes almost free once the rail and receipts exist. High usefulness per unit of effort, no strategic weight on its own. |
+| Self-declared | The history and details the renter writes in | The renter, any time |
+| Witnessed | Payment record, on-time streaks, tenancies completed, condition reports signed | Automatically, from everything the app records |
+| Verified | Identity, background check, court records | The renter pays once, reuses everywhere |
+| Showcase | LinkedIn, Instagram, X, anything the renter wants a landlord to see | The renter links what they choose, and chooses per share |
 
-## Parked, and what revives each
+No two passports look alike, and that is by design. A passport with three months of history is a young passport, not a bad one. Every month of renting adds to it on its own.
 
-| Parked feature | Revival condition |
+**Reputation carries two voices, kept separate on purpose:**
+
+- **What landlords said.** Ratings and feedback from each stay, shown as what they are: one party's view. If a renter disputes one, that conversation is between them and that landlord; the app presents it fairly and without judgment, but the app is not the referee.
+- **What was witnessed.** Impartial, factual, machine-kept: rent on time 34 of 36 months, two tenancies completed in full, deposit returned in full, condition reports signed by both sides. No opinions, no verdicts, no labels. The facts speak, in both directions: they expose a genuinely bad history, and they quietly defend a good tenant against one unfair review.
+
+**The passport travels.** It attaches automatically to every application inside Browse. And it downloads as a document the renter can send to any landlord anywhere, on RentOk or not, carrying its verification marks and the name of who stands behind them. Every passport shared with a landlord who has never heard of us is a small introduction: this is what a renter looks like when someone has been keeping score. Some of those landlords will be curious enough to ask who was keeping it.
+
+**The score.** The witnessed record rolls up into a tenancy score the renter watches grow: the renting life's answer to a credit score, built by simply living well. Partner offers get better as it grows: zero-deposit moves, better terms. The long-term ambition, stated so it is not lost: rent history this clean should one day count toward actual credit.
+
+---
+
+### 5. Moving on
+
+**The notice, protected.** The vault already knows the notice period; the app reminds before it is due and drafts the notice letter.
+
+**The move-out record.** The same video walkthrough as move-in, producing the closing condition report, signed by both sides when the landlord participates. Move-in report plus move-out report plus payment history plus maintenance log equals the deposit conversation settled by record.
+
+**When the deposit conversation goes wrong.** The app assembles the evidence in one packet: dated reports, payments, the log of what was reported and when. If it comes to it, legal help through partners, with the packet ready to hand over. The strongest sentence a renter will ever say about this app is "it got my deposit back."
+
+**And the record moves with them.** The tenancy that just ended becomes the newest entry in the passport, and the passport is already attached to the search for the next place. The end of one tenancy is the strongest moment of the next one.
+
+---
+
+## The mechanics that run through everything
+
+**The tool ends where the workflow begins.** Every tool works standalone, fully, with no strings: generate one receipt, check one agreement, plan one trip. And at the moment the tool's value has just landed, and only then, the app offers the next step: the receipt is ready, want this automatic every month? The agreement is checked, want it kept in your vault with the notice-period reminder set? One suggestion, at the moment it is obviously useful, never a popup at the door, never twice. That is how tools become workflows and visitors become residents: by being genuinely useful first and quietly ambitious second.
+
+**Login gates the result, never the discovery.** The tools are findable and startable by anyone searching at their moment of need. The finished result is where the account begins. Nothing useful escapes without a login, and nobody hits a wall before they have seen the value.
+
+**Everything feeds the record.** Every payment, report, verification, and completed tenancy makes the passport heavier. Features that add to the record and features that spend it are both welcome; features that do neither must be genuinely delightful to stay.
+
+**Every artifact carries the name.** The receipt that reaches an employer, the passport that reaches a landlord, the condition report both parties sign: each one travels beyond the app and introduces us to someone who never installed anything.
+
+**Personal to the renter.** The student, the professional, the couple, the family: different budgets, different tools up front, different offers. Same app, personally arranged. And per TAR-00, offers respect age: minors are never targeted.
+
+## Deferred, and what revives each
+
+| Deferred | Revived by |
 |---|---|
-| Deposit financing (pay the move-in lump sum in installments) | A vendor relationship. We used one before and stopped; the concept stands, the partner is to be chosen. |
-| Deposit protection as a financial guarantee | The deposit arc proves volume first. This is a regulated financial product and takes a partner. |
-| Credit bureau reporting of rent history | The rail runs and history accumulates. Then the bureau conversations begin. The internal score inside the passport ships first and does not wait. |
-| Rent as a biller inside every bank's bill-pay app | BBPS front-end volume justifies the registration effort. This flips distribution: our rent appears inside other apps. |
-| Electricity overcharge detector | The locality truth layer starts crowd-sourcing actual tariffs. We do not want to maintain government tariff tables by hand. |
-| Moving-out to moving-in room matching | Community density exists. Before that it is an empty room nobody sees. |
-| Parent window (visibility for the parent who pays) | The research in TAR-04 answers the autonomy question. The concept card exists there; we do not build past the tenant's comfort. |
+| Zero-deposit and pay-in-parts at scale | Partner agreements in place |
+| Reporting rent history to credit bureaus | The witnessed record reaching real volume |
+| Rent as a payable inside every bank's bill-pay app | Bill-payment volume justifying the registration |
+| Electricity overcharge detection | Area intelligence learning real tariffs from renters themselves |
+| Room handover matching, outgoing renter to incoming | Community density making matches likely |
 
-## Cut, and why
+## Not building, and why
 
-| Cut feature | Reason |
+| Not building | Why |
 |---|---|
-| Utility connection transfer | Government workflows differ by state and utility, with dependencies we cannot own. The services directory can point to partners who do this. |
-| Safety and SOS layer | A half-built safety feature is a liability, not a feature. Phones and dedicated apps do this better than a rental app ever will. |
-| Broker fee blacklists | Naming individuals invites defamation exposure. Structured property reviews absorb the honest part of the need. |
-| Standalone furniture rental | Folds into the services directory and the peer-to-peer marketplace. Not its own surface. |
-| Generic expense tracker as its own product | Commodity. It survives only as the money module's byproduct view, where paying does the tracking. |
+| Utility connection transfers | Government workflows differ by state and utility; partners in the services directory can serve this. |
+| A safety and SOS layer | A half-built safety feature is a liability. Phones and dedicated apps do this properly. |
+| Broker fee blacklists | Naming individuals invites legal exposure; reviews of properties and verified-broker tags carry the honest part. |
+| A parent window | Belongs to the RentOk and white-label doors, where the property relationship exists. This door is the renter's own. |
 
-## Build order
+## Why this holds together
 
-Three waves, matching the spine chain. Each wave must stand on its own if the next never arrives.
-
-| Wave | Ships | The bet it tests |
-|---|---|---|
-| **A** | Public tools hub · Browse with the Broker's Discover and Understand rungs · Passport with self-attested and RentOk-witnessed layers · rent receipts · move-in documentation | Strangers arrive through tools and the Broker, and alumni return for the passport. |
-| **B** | The rail · the money module · third-party verified layer · Broker's Decide and Act rungs · community board · services directory · AI Lawyer full | Tenants transact, and verified history starts accumulating. |
-| **C** | Broker's Negotiate rung · paid tiers · partner monetization at depth · parked items as their conditions arrive | The record is valuable enough that tenants pay, and partners pay to reach them. |
-
-## Decisions still open
-
-Written here so they are owned, not lost:
-
-1. **Does a tenant see, and can they contest, a management rating or blacklist entry before it enters their shareable passport?** The data exists today and is entered by someone else about them, and it can gate their next home. Needs a policy decision before the witnessed layer ships.
-2. **Broker licensing review** before the Negotiate rung, as above.
-3. **City sequencing**: the default is to launch where the RentOk property network is already dense, borrowing the other doors' density instead of bootstrapping thin everywhere. Standing default unless argued down.
-4. **What the complaint record means in a passport.** A tenant who reported a broken geyser must never score worse than one who suffered in silence, or we teach tenants to stop reporting. Only conduct flags and eviction-for-cause style signals enter the passport, never raw complaint counts. Held as a design rule; needs restating wherever scoring is specified.
-
-## How this door feeds the other two
-
-Named plainly because it is the business case: every passport shared puts our name in front of an unknown landlord as a vouching authority. Every rail payout arrives in a landlord's bank account with our name attached. Every verified-landlord badge is a landlord touching RentOk voluntarily. Every alum carries their record out of doors 1 and 2 and becomes this door's warmest user. The three doors are one loop: the records built where RentOk manages the property become the product where it does not, and the tenants it serves there lead us to the landlords we have not met yet.
+One loop, running through all five moments: the app is useful enough to live in, living in it builds a record, the record opens the next door, and the next door was found in the app. Browse brings renters in, the everyday layer keeps them, the passport makes leaving costly in the only honest way: not by locking anything, but by having witnessed a life no other app can vouch for.
