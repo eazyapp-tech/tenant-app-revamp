@@ -52,13 +52,15 @@ No one in the Indian rental marketplace offers this. Listing sites answer intere
 
 ### 2. Moving in
 
-**The rent agreement, without the middleman fee.** Brokers and agents charge heavily for what is mostly paperwork. Here the renter creates the agreement themselves, or brings the landlord's draft and completes it: drafting, stamping, and signing, all inside the app, for a small service fee plus the government's own charges. Others offer this service; we offer it cheaper, and ours feeds everything else: the finished agreement lands in the vault, its dates set the reminders, and the tenancy it starts feeds the record.
+**The rent agreement, without the middleman fee.** Brokers and agents charge heavily for what is mostly paperwork. Here the renter creates the agreement themselves, or brings the landlord's draft and completes it: identity verification, drafting, stamping, and signing, one complete workflow inside the app, for a small service fee plus the government's own charges. Verification is not a separate errand; it is the first step of signing, the way it should be. Others offer agreement services; we offer it cheaper, and ours feeds everything else: the finished agreement lands in the vault, its dates set the reminders, and the tenancy it starts feeds the record.
 
 **The agreement, before signing.** The **AI Lawyer** reviews any agreement, self-created or received: an agent that knows the tenancy law that actually applies in that state, flags one-sided clauses in either direction, landlord-sided or tenant-sided, explains every clause in plain words, and answers rights questions any time. It always says which state's law it is applying, and says plainly when it does not know. And when the renter wants a human, they book one: verified expert lawyers, available at any point, to review a draft, advise on a clause, or take a matter further. RentOk's legal services live one tap from the document that needs them.
 
 **The agreement, working for the renter.** An uploaded or created agreement is not just stored, it is read. Landlord details, rent amount, due date, notice period, lock-in, end date: everything the agreement contains gets extracted and offered back as a ready-made setup. Rent reminders configured, the vault filled, the landlord line started, the protecting reminders set, without the renter typing any of it twice. One document, and the app is already arranged around their tenancy.
 
-**Verification, the renter's own.** Identity verification and background check, done once, paid once, reusable in the passport across every future application. Police verification too, self-initiated from the app, for the renter and for family members when a family rents together, instead of paying a broker to shuffle the forms.
+**Verification, the renter's own.** Identity verification and background check, done once, paid once, reusable in the passport across every future application.
+
+**Police verification, on its own.** Not a line item folded into background verification: its own service, because a landlord signing an agreement with a new tenant asks for it almost as often as they ask for the agreement itself. Self-initiated from the app, for the renter and for every family member when a family rents together, done once and carried in the passport rather than arranged fresh, in person, at a station, for every move. And because the two belong together, every agreement completed in the app ends with the same recommendation: get the police verification done now, while the details are fresh. The tool-to-workflow rule, applied to paperwork.
 
 **The move-in record.** The renter walks the room with their camera. The app extracts everything from the video: what items are there, their condition, the meter reading. The renter confirms the list, adds anything the extraction missed, and the app produces a proper condition report, keeping the video itself as part of the proof. If the landlord participates, both sides sign it: an OTP-based sign included in the experience, or an Aadhaar-based digital signature as a paid option. If the landlord never participates, the report still stands as the renter's own dated, structured proof. Either way it goes into the vault, and it is what makes the deposit conversation at move-out a matter of record instead of memory.
 
@@ -74,7 +76,8 @@ The everyday layer. This is where the app earns its place in ordinary life, and 
 
 **The money surface.** One connected module, not five features:
 
-- **Rent, handled.** The renter sets up their rent once: landlord details, bank details, PAN or GST where available, amount, due date. Most of it arrives pre-filled from the agreement. The landlord's own details get verified from what the renter provides, without the landlord needing to be involved at all, so payments and receipts rest on checked information rather than typed guesses. The app reminds on time, every month. Paying happens the renter's way: through the app by card or gateway, or through their own UPI app, with the app recording the payment either way. Nobody is forced through our rails to get the benefit of the record.
+- **Rent, handled.** The renter sets up their rent once: landlord details, bank details, PAN or GST where available, amount, due date. Most of it arrives pre-filled from the agreement. The landlord's own details get verified from what the renter provides, without the landlord needing to be involved at all, so payments and receipts rest on checked information rather than typed guesses. Paying happens the renter's way: through the app by card or gateway, or through their own UPI app, with the app recording the payment either way. Nobody is forced through our rails to get the benefit of the record.
+- **The reminder, automatic.** Rent due dates never depend on memory: the app reminds ahead of every due date, every month, on its own, the same way it already does for bills.
 - **The receipt, automatic.** Every recorded payment produces a proper HRA-compliant rent receipt, ready for the office, every month, without asking.
 - **Bills.** Electricity, gas, broadband, DTH, mobile, paid in the app through BBPS, with their own reminders.
 - **Split.** Rent and bills split between flatmates: settled in the app, or paid outside and recorded, with the ledger kept honest either way.
@@ -86,11 +89,19 @@ The everyday layer. This is where the app earns its place in ordinary life, and 
 
 **The community: the Flat and Flatmate board.** Where the city's renters already are, but with real identity. People post rooms available and rooms wanted, the way the locality Facebook and WhatsApp groups work today. Members who verify themselves carry a verified tag; unverified members can browse and post, with the difference visible. Members can share their passports with each other, which turns the terrifying stranger-roommate decision into an informed one, and compatibility matching helps people find flatmates whose lives actually fit: schedules, food, guests, cleanliness. Every renter controls what each audience sees: what is public, what peers see, what landlords see. The peer-to-peer marketplace lives here too: the mattress, the fridge, the desk, sold to the next renter in the same locality instead of abandoned.
 
+**Talking, inside the app.** The community only works if its members can actually reach each other: negotiate the price of that fridge, coordinate a flat viewing, get to know a possible flatmate before deciding. In-app messaging carries all of it, which also means nobody has to hand a stranger their phone number just to ask a question.
+
+**Flatmates rate flatmates.** People who actually lived together leave each other ratings, the signal every future flatmate wishes existed. Shown when someone is weighing a potential flatmate, governed by the same visibility controls as everything else.
+
+**The flat of three bachelors.** Worth naming as a picture, because it is this door's most common real household and its best word-of-mouth story. Three friends rent a flat; the landlord has never heard of us. Inside one flat, the whole everyday layer is at work: a shared budget, rent and bills split three ways, reminders landing before due dates, the chore list rotating, the repair one of them paid for sitting in the ledger against next month's rent. When one moves out, the board finds the replacement, the deposit math settles cleanly, and the new flatmate walks in with a passport the other two have already seen. One flatmate installing the app quietly makes it three people living in it.
+
 **Local services.** The renter with no property manager has nobody to call. A curated directory of partnered services fills that gap: cleaning, repairs, maid, cook, tiffin, laundry, doctor visits, couriers, and legal help from verified lawyers. Everything in this layer is chosen, not scraped; a directory of everyone is a directory of no one.
 
 **Offers.** A separate surface from services, on purpose: services are things you book and someone shows up; offers are deals brands bring to verified renters. Tenant insurance, medical insurance, zero-deposit and pay-in-parts products, brand deals that earn their place. Services must never feel like an ad shelf, and offers never pretend to be anything but offers.
 
-**The trip planner.** A light AI itinerary assistant: tell it where you are going, get a plan. One of the small pleasures that make this a lifestyle app rather than a filing cabinet.
+**The to-do list.** Daily chores, errands, the small logistics of a shared flat: a simple, fast list that is always there, with shared lists for flatmates so the gas cylinder actually gets bought. Other apps charge for a good one; here it comes with the life, and it is one more reason the app is opened on an ordinary day.
+
+**Small AI companions.** Light, independent, each one useful alone. The **trip planner**: tell it where you are going, get a plan. The **meal planner**: for the renter who cooks, or keeps a cook, it plans the week's meals and shops the list, shaped to their food, their budget, their household. The small pleasures that make this a lifestyle app rather than a filing cabinet.
 
 ---
 
@@ -142,11 +153,13 @@ A named thread running through the whole door, because it is bigger than any one
 
 A renter living in a property that is not on RentOk saves their landlord's details once. From then on, the renter chooses which activities reach the landlord automatically: the move-in report to acknowledge, the logged repair that should be reimbursed, the running ledger of what gets deducted from next month's rent, the move-out report to sign. The landlord starts receiving structured, professional, dated documents from their own tenant, each one carrying our name.
 
+And the renter rates the landlord, whether or not the landlord has ever touched RentOk. Every stay leaves feedback both ways, in every state we operate. A landlord's reputation starts accumulating before they arrive, so the day they do log in, they find a history already waiting, and the renters who come after get what renters have never had: a way to know what a landlord is like before signing.
+
 Where this leads: when a renter adds landlord details, a landlord profile takes shape in the RentOk ecosystem. The landlord gets a message: your tenant shared this with you, see the full picture here. When they log in with nothing but their phone number, everything already linked to them is waiting: their tenants, their property, the payment history, the reports. From there, the landlord app and the manager app are one step away. RentOk's vision is the whole of renting: single-family homes, multi-tenant buildings, PGs, co-living, hostels, serviced apartments, short stays, commercial property, and the firms that manage all of it. The landlord line is how this door feeds that vision: the tenant builds the landlord's front door without either of them experiencing it as sales.
 
 ## The mechanics that run through everything
 
-**The tools are the way in.** Several things this app does are useful to a person who has never heard of us: a rent receipt, made properly and ready to file · an agreement checked against the law of their own state · what rent really costs in a lane they are considering · what a move will actually cost, all of it counted · a trip planned. Each one works completely on its own, for its own sake, for someone with that problem today. They are how a stranger finds us at the moment they need us, and most renters will meet this app through one of them rather than through a property search.
+**The tools are the way in.** Several things this app does are useful to a person who has never heard of us: a rent receipt, made properly and ready to file · an agreement checked against the law of their own state · what rent really costs in a lane they are considering · what a city really costs to live in, for someone weighing a move to it · what a move will actually cost, all of it counted · a trip planned · a week of meals planned. Each one works completely on its own, for its own sake, for someone with that problem today. They are how a stranger finds us at the moment they need us, and most renters will meet this app through one of them rather than through a property search.
 
 **The tool ends where the workflow begins.** Every tool works standalone, fully, with no strings: generate one receipt, check one agreement, plan one trip. And at the moment the tool's value has just landed, and only then, the app offers the next step: the receipt is ready, want this automatic every month? The agreement is checked, want it kept in your vault with the notice-period reminder set? One suggestion, at the moment it is obviously useful, never a popup at the door, never twice. That is how tools become workflows and visitors become residents: by being genuinely useful first and quietly ambitious second.
 
@@ -172,6 +185,9 @@ Three layers, in the order they unlock. The full strategy gets its own document;
 
 | Deferred | Revived by |
 |---|---|
+| Polls | A door 1 and door 2 feature first; this door borrows it later if its community wants it |
+| Event planner | Same: proven in doors 1 and 2 before it earns a place here |
+| Internships and jobs board | An open question from stakeholder review; parked until the need it serves is clearer |
 | Reporting rent history to credit bureaus | The witnessed record reaching real volume |
 | Rent as a payable inside every bank's bill-pay app | Bill-payment volume justifying the registration |
 | Electricity overcharge detection | Area intelligence learning real tariffs from renters themselves |
