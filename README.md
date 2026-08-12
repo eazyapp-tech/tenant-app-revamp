@@ -16,6 +16,7 @@ Design, product, and research documents for the new RentOk tenant app: a fresh b
 4. **[TAR-04 · Research Kit](TAR-04-research-kit.md)**: interview guides and concept tests for tenants, owners, and the internal team.
 5. **[TAR-05 · How Features Earn Their Place](TAR-05-how-features-earn-their-place.md)**: the persuasion layer: how features tenants would never ask for win their willing participation, across all three versions of the app.
 6. **[TAR-06 · Open for All: The Feature Map](TAR-06-open-for-all-feature-map.md)**: the lifestyle app for everyone who lives on rent, written as a renter's life moment by moment, with what we deferred and what we chose not to build.
+7. **[TAR-07 · The RentOk Tenant App: The Feature Map](TAR-07-standard-app-feature-map.md)**: the standard app for tenants in RentOk properties, written as a tenant's life moment by moment: the spine, the Family Window, the shared tenancy, the switchboard, and how this door earns.
 
 ## Reference
 
