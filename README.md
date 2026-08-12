@@ -15,6 +15,7 @@ Design, product, and research documents for the new RentOk tenant app: a fresh b
 3. **[TAR-03 · What Each Part Must Become](TAR-03-what-each-part-must-become.md)**: module by module: the ambition, what the first draft taught us, what research must validate.
 4. **[TAR-04 · Research Kit](TAR-04-research-kit.md)**: interview guides and concept tests for tenants, owners, and the internal team.
 5. **[TAR-05 · How Features Earn Their Place](TAR-05-how-features-earn-their-place.md)**: the persuasion layer: how features tenants would never ask for win their willing participation, across all three versions of the app.
+6. **[TAR-06 · Open for All: The Feature Map](TAR-06-open-for-all-feature-map.md)**: the third door's contents, sorted into spine, supporting, parked, and cut, with the reasoning behind every placement.
 
 ## Reference
 
