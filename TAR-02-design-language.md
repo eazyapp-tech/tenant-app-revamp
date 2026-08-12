@@ -24,7 +24,7 @@ A tenant should feel the app belongs to the place they live, not to the company 
 
 ### The reference bar
 
-Our closest relatives are not other property apps. They are the Indian fintech apps that made boring, adult financial products feel worth owning and showing off. Rent, receipts, and paperwork are the most boring products of all. Nobody has done for renting what those apps did for money. From studying them at source-code level, one meta-lesson: each makes exactly one expensive, unmistakable investment and keeps everything else disciplined. Ours is the typeface.
+Our closest relatives are not other property apps. They are the Indian fintech apps that made boring, adult financial products feel worth owning and showing off. Rent, receipts, and paperwork are the most boring products of all. Nobody has done for renting what those apps did for money. From studying them at source-code level, one lesson stood out: each makes exactly one expensive, unmistakable investment and keeps everything else disciplined. Ours is the typeface.
 
 ---
 
@@ -32,8 +32,8 @@ Our closest relatives are not other property apps. They are the Indian fintech a
 
 **The face is Anek, drawn by Ek Type in Mumbai.** Why this one, out of everything money could buy:
 
-- **It speaks ten Indian scripts** (Devanagari, Tamil, Telugu, Kannada, Bangla, Gujarati, and more), all built to identical proportions. A Hindi or Tamil version of the app becomes a file swap where nothing shifts or breaks. No other family in the world offers this.
-- **It has real weights.** The current app ships only one weight and fakes every bold, which is part of why it looks soft and cheap. Anek gives us the full range genuinely, plus a width range that gives us a distinctive voice for big numbers without buying a second font.
+- **It speaks nine Indian scripts plus English** (Devanagari, Tamil, Telugu, Kannada, Bangla, Gujarati, Gurmukhi, Malayalam, Odia), all built to identical proportions. A Hindi or Tamil version of the app becomes a file swap where nothing shifts or breaks. No other family in the world offers this.
+- **It has real weights.** The current app ships only one weight and fakes every bold, which is part of why the type never looks fully confident. Anek gives us the full range genuinely, plus a width range that gives us a distinctive voice for big numbers without buying a second font.
 - **Its numbers can align in columns**, which money screens require.
 - **Its license is free forever, for unlimited client apps.** Every commercial font we evaluated charges per app, which is poison for a white-label product. Here, money would buy a worse outcome. That is rare and worth savoring.
 - **It is an Indian face from an Indian foundry.** The common alternatives make every app look like every other app. This reads as a decision, and it is one no competitor can copy without copying the reasoning.
@@ -88,11 +88,36 @@ Every interactive element answers for eight situations: resting, pressed, select
 - **Pressed feedback is a slight shrink, not a color change**, because it is the one response that works identically under every client's palette.
 - **Failure explains itself.** A disabled button says why nearby. An error names the problem and the way out. Raw technical messages never reach a tenant's eyes.
 
+## The quiet screens
+
+When the new app launches, every migrated tenant starts with empty everything. The cold start is not an edge case for us; on day one it is the whole experience. So the screens that show nothing get as much design love as the screens that show everything, and because they are seen rarely, our own motion rule says they are exactly where rich animation and illustration are allowed to spend.
+
+**A zero has three different feelings, and we design all three:**
+
+- **The zero that is good news.** No dues. No open complaints. These are small victories and they look like it: a moment of warmth, a line with a smile in it ("No dues. Enjoy the month."), never a gray shrug.
+- **The zero that is an invitation.** No documents yet, no first payment, nothing booked. These teach in one sentence, show one clear action, and make starting feel easy. The first-ever screen of every part of the app is designed as a welcome, not a blank.
+- **The zero that is our fault.** Nothing loaded, connection lost. These own the failure plainly, keep whatever was last known on screen with its age shown honestly, and offer one obvious retry.
+
+**Waiting on a person is its own state.** A join request waiting for the owner. A complaint waiting for the electrician. A deposit waiting for a refund. These are not loading spinners: a human is the dependency. So the screen shows who, shows honest progress, and offers a polite nudge when waiting has gone on too long. A tenant should never stare at a blank "pending."
+
+**Permissions are asked like a good guest asks.** Camera, location, notifications: each system permission is a trust cliff. The rule: never ask before the value is obvious, always precede the system dialog with a warm plain-words screen of ours that says what we need and why in one breath, and always survive refusal gracefully with a way back later. The reasons behind each ask, and what the tenant gets in return, live in [TAR-05](TAR-05-how-features-earn-their-place.md).
+
+**Interrupted flows resume.** A payment cut off by a phone call, a document upload abandoned at step three, the app closed mid-signature: every multi-step flow saves its progress and reopens where the tenant left off. Starting over is a design failure, not a tenant failure.
+
+## Illustration
+
+Type, color, motion, and icons are defined above; illustration is the fifth voice, and today's app has none: its images are a style jumble collected over years. The new app has one illustration language, and it lives in specific places:
+
+- **Where illustration belongs:** the quiet screens, welcomes and first-runs, permission explainers, celebrations, and the moments described in TAR-05 where a warm image does what words cannot. These are also where animated illustration (the living, looping kind the best modern Indian apps use) earns its place.
+- **Where it is banned:** transactional screens. A dues list, a passbook, a document status never carries decoration. Money screens stay quiet.
+- **What it looks like:** warm, specific, and Indian without costume: real everyday textures of rented life (a corridor, a tiffin, a ceiling fan, a lock and key), never generic corporate figures with no faces and no place. It must sit comfortably beside any client's colors, so it leans on our ink and paper tones with restrained accents rather than a fixed palette.
+- **One open decision:** whether the set is commissioned as custom artwork or built as a rigorously curated style. That is a budget and stakeholder call, tracked in TAR-00's open decisions.
+
 ## Voice
 
 - **Concrete, not clever.** Name the actual thing: rent, deposit, room, food, complaint. Wordplay does not survive translation and does not land for a tenant reading in their second language.
 - **Plain first, warm second.** "Rs 8,500 due in 4 days" before any personality. Warmth lives in the moments: the welcome, rent paid, the goodbye.
-- **Never exclusive.** The membership-and-tiers register of Indian fintech is exclusionary when applied to housing. Nobody should feel their home is a club they might not get into.
+- **Never exclusive.** The membership-and-tiers style of Indian fintech is exclusionary when applied to housing. Nobody should feel their home is a club they might not get into.
 - **Built for translation from day one.** Hindi first among them. Copy is written so it translates without dying, and every screen survives longer words.
 
 ## Touch, comfort, and access
@@ -105,7 +130,7 @@ Every interactive element answers for eight situations: resting, pressed, select
 
 ## The dignity laws
 
-- **Age gates content, never ability.** Under-18 tenants get curated, age-appropriate content with all profiling off. That is Indian law and our floor.
+- **Age limits content, never ability.** Under-18 tenants get curated, age-appropriate content with all profiling off. That is Indian law and our floor.
 - **No stereotype ever ships.** Personalization keys on needs and rules, not on assumptions about gender, age, or class.
 - **The floor is served silently.** Budget phones, daylight, limited English, expensive data: accommodated everywhere, announced nowhere.
 
@@ -125,6 +150,8 @@ A design language is enforced by what it forbids. The named prohibitions:
 10. No dark-only design; daylight is the default condition.
 11. No prize mechanics attached to rent.
 12. No "simple mode."
+13. No system permission asked before its value is shown.
+14. No fake exchange: if a feature asks something of a tenant and offers nothing real back, the ask stays plain and honest instead of gamified.
 
 ## The signature moments
 
@@ -142,3 +169,4 @@ This system counts as a benchmark only if someone outside RentOk could read its 
 
 - 10 August 2026: first version, assembled from the fintech teardown, brand-system synthesis, typeface, color, and craft research (all in `research/`).
 - 12 August 2026: rewritten in plain language for the full audience. Added: iconography, states, voice, touch and access, the dignity laws including the under-18 rule, and the named bans. Measurement detail moved entirely to `research/`.
+- 12 August 2026, later: added the quiet screens chapter (the three kinds of zero, waiting on a person, permission manners, resumed flows), the illustration language, and two bans (13, 14) that came out of the positioning work in TAR-05.

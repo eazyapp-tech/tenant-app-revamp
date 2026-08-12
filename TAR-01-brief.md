@@ -2,7 +2,7 @@
 
 **Read [TAR-00](TAR-00-vision-and-requirements.md) first.** TAR-00 says what we are building and why. This document says how the bet works: how the app spreads, how personalization behaves in practice, what gets built in what order, and what could go wrong.
 
-*Last updated 12 August 2026. Owner: Sanchay. Evidence marks: Verified (we checked it ourselves), Seen in the field (observed with real tenants and staff), Our read (our judgment, to be tested in research).*
+*Last updated 12 August 2026. Owner: Sanchay. Evidence marks (Verified, Seen in the field, Our read) are defined once, in [TAR-03](TAR-03-what-each-part-must-become.md).*
 
 ---
 
@@ -10,7 +10,7 @@
 
 WhatsApp already handles messages and payment links well. Competing with WhatsApp on utility is a losing game. The one thing WhatsApp can never be is the app of the place you live: your building's name and logo, tonight's dinner, your attendance streak, your rent record, the people around you. We bet that belonging is what makes a tenant keep the app, and utility is what makes them trust it. Both, in that order.
 
-And because adoption gates everything: the owner is the channel. Research is blunt that tenants install the app when the owner pushes it and not otherwise. So the handover moment is part of the product. The owner shows a code at move-in, the tenant lands in a welcome that feels like arriving home, and the owner can see who joined.
+And because adoption gates everything: the owner is the channel. Our field interviews say tenants install the app when the owner pushes it, and rarely otherwise: the strongest signal in the research, and one the research kit still tests directly. So the handover moment is part of the product. The owner shows a code at move-in, the tenant lands in a welcome that feels like arriving home, and the owner can see who joined.
 
 ## How the app spreads
 
@@ -28,9 +28,9 @@ The line we never cross: no feature is ever locked behind sharing. No contact-li
 
 ## Personalization in practice
 
-Four signals shape what a tenant sees. The manager app already captures the property side of this data, and anything missing can start being captured.
+Four things shape what a tenant sees. The manager app already captures the property side of this data, and anything missing can start being captured.
 
-| Signal | What actually changes |
+| What we know | What actually changes |
 |---|---|
 | **Who the tenant is** (student, professional, family, cash-first, sponsored) | Greeting, tone, and what comes first on Home. A student's evening is food and the gate. A professional's month is rent and receipts. A sponsored tenant, whose company pays, is never nagged about dues. |
 | **Where they live** (city, state) | Offers, services, and local content. Nothing irrelevant to their city. |
@@ -49,7 +49,7 @@ And the standing brand rule: the property's logo and name lead the app. Today th
 
 The new app is built alongside the untouched production app, then tenants migrate. Build order follows dependency and trust, not module lists:
 
-**Phase 1: the foundation.** The design system, because every screen inherits it. Then the core loop: joining and first open, Home, and Money. These three carry the first impression, the daily glance, and the trust moment. If these three are not exceptional, nothing downstream matters.
+**Phase 1: the foundation.** The design system, because every screen inherits it. Then the core loop: joining and first open, Home, and Money. These three carry the first impression, the daily glance, and the trust moment. If these three are not exceptional, nothing that comes later matters.
 
 **Phase 2: the daily habits.** Food and Attendance. These bring the student register back every day, and daily return is what adoption means. Complaints and Profile complete the trust core alongside them.
 
@@ -75,14 +75,7 @@ Migration itself is designed, not assumed: moving a tenant from the old app to t
 
 ## What success looks like
 
-In order; the first gates the rest.
-
-1. **Adoption.** Installs and monthly active tenants at pilot properties against a measured baseline. Long-range: tenants naming the app as a reason to choose or stay in a property.
-2. **Chargeable value.** The app earns the platform-fee conversation with real owners.
-3. **Owner pride.** Owners demonstrating the app unprompted, measured through owner-driven installs.
-4. **Craft recognition.** The app becomes a sales asset and a reference other teams cite.
-
-Guardrail: first-run completion rate, watched from day one of the pilot.
+The success criteria and their order live in [TAR-00](TAR-00-vision-and-requirements.md), the single home for that list. Two operational notes belong here: the adoption baseline gets measured in the first month at pilot properties so targets rest on real numbers, and first-run completion is watched from day one, because the first minutes are where the old app lost people.
 
 ## Changelog
 

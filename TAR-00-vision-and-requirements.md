@@ -46,7 +46,7 @@ This changes what we are allowed to imagine. Earlier we treated the backend as f
 
 ## Who we are building for
 
-Seven kinds of tenants came out of our research: hostel and PG students, working professionals, families in flats, migrant and blue-collar workers, tenants whose company pays their rent, short-term tenants, and long-term settled tenants. For design we group them by what they need:
+Seven kinds of tenants came out of our research: hostel and PG students, working professionals, families in flats, migrant and blue-collar workers, tenants whose company pays their rent, short-term tenants, and long-term settled tenants. For design we group them by what they need, and we call each group a register: not a fixed box, just the mode of life that shapes what a tenant needs from the app this month. One person can move between registers as their life changes.
 
 | Register | Daily reality | The app's job for them |
 |---|---|---|
@@ -59,7 +59,7 @@ Seven kinds of tenants came out of our research: hostel and PG students, working
 Two more audiences matter as much as tenants:
 
 - **Parents and guardians.** For student tenants, the parent often pays the rent and always worries. They are a real user and possibly a paying one. The app should have an answer for them.
-- **Property owners and managers.** They are the distribution channel: research is blunt that tenants install the app when the owner pushes it, and not otherwise. They are also the white-label buyer. Owner pride, "this is my property's app," is a feature.
+- **Property owners and managers.** They are the distribution channel: our field interviews say tenants install the app when the owner pushes it, and rarely otherwise. It is the strongest signal in the research, and the research kit still tests it directly. They are also the white-label buyer. Owner pride, "this is my property's app," is a feature.
 
 **The ceiling and the floor.** The app must delight a design-literate professional in a Bengaluru co-living and remain fully usable for a migrant worker on a budget phone in daylight. Sophistication reveals itself as someone engages. Nothing basic ever hides behind novelty, and there is never a stripped-down "simple mode", which is only a polite insult.
 
@@ -118,13 +118,14 @@ In order; the first gates the rest.
 3. **Owner pride.** Owners showing the app to prospective tenants unprompted. Measured through owner-driven installs: move-in QR scans and owner-sent invites.
 4. **Craft recognition.** The app becomes a sales asset and a reference other teams cite.
 
-Guardrail: first-run completion. Today's app loses people in their first minutes, and no amount of beauty downstream survives a broken welcome.
+Guardrail: first-run completion. Today's app loses people in their first minutes, and no amount of beauty later survives a broken welcome.
 
 ---
 
 ## What we will not do
 
-- No feature gated behind sharing or referrals.
+- Nothing is ever naked compliance: every feature that asks something of a tenant visibly gives something back, or the ask stays plain and honest. How each feature earns its place: [TAR-05](TAR-05-how-features-earn-their-place.md).
+- No feature locked behind sharing or referrals.
 - No behavioral targeting of minors, anywhere, in any form.
 - No stereotype personalization.
 - No prize wheel attached to rent.
@@ -142,6 +143,7 @@ Guardrail: first-run completion. Today's app loses people in their first minutes
 | [TAR-02 Design Language](TAR-02-design-language.md) | Type, color, motion, surfaces, the laws of how it all looks and moves |
 | [TAR-03 What Each Part Must Become](TAR-03-what-each-part-must-become.md) | Module by module: the ambition, what the first draft taught us, what to validate |
 | [TAR-04 Research Kit](TAR-04-research-kit.md) | Interview guides and concept tests for tenants, owners, and the internal team |
+| [TAR-05 How Features Earn Their Place](TAR-05-how-features-earn-their-place.md) | How every feature wins the tenant's willing participation: the exchange rule, framings, gamification ethics |
 | [Current App Feature Map](current-app-feature-map.md) | Everything the existing app does today |
 | [Backend Requirements Ledger](backend-asks-ledger.md) | What the new service layer must provide, gathered as design surfaces it |
 | `research/` | The studies behind the decisions: reference-app teardowns, typeface and color research, craft audits |

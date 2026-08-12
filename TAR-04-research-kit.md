@@ -8,13 +8,15 @@ status: v1-ready-to-pilot
 
 # TAR-04 · Research Kit
 
-> Derived from [TAR-03](TAR-03-what-each-part-must-become.md). Three instruments, one per audience, each asking only what that audience uniquely knows. Every question carries its scope frame and the hypothesis it tests. Broad quantitative survey comes AFTER interview round one sharpens these: qualitative first, always.
+> The question sets for validating [TAR-03](TAR-03-what-each-part-must-become.md) with real people. **About to run a session? Tenants: Instrument A. Owners and managers: Instrument B. Our own team: Instrument C.** Each instrument asks only what that audience uniquely knows. A broad survey comes only after interview round one: talk first, count later.
+>
+> **Reading the tags on questions:** M-numbers point to TAR-03's numbered parts (M1 Money, M2 Joining, M3 Home, M4 Complaints, M5 Profile and documents, M6 Moving out, M7 Attendance, M8 Food, M9 Rewards, M11 Messages). They tell the interviewer which hypothesis a question tests.
 
 ## The rules these instruments obey
 
 1. **No question about anything the codebase already answers.** Zero bug-asking.
 2. **Nobody is asked to design.** Stories, recalls, counts, choices. We translate.
-3. **Every question declares its scope**: [TODAY] answer only about the app as it exists · [NO LIMITS] anything is possible, money and tech no object · [PICK] choose from exactly these options.
+3. **Every question declares its scope frame**: [TODAY] answer only about the app as it exists · [NO LIMITS] anything is possible, money and tech no object · [PICK] choose from exactly these options.
 4. **Ideas are harvested as needs, never as features.** Workarounds, wishes, irrelevance. A volunteered feature always gets the follow-up "what would that let you do?": we log the need, not just the feature.
 5. **Session order is fixed:** experience recall → specific moments → THEIR wishes/workarounds → OUR concept tests → ranking. Their fresh ideas always come before our proposals, so ours can't anchor theirs.
 6. **Banned forms:** "Is it easy/intuitive/clear?" · "What would you improve (visually)?" · "Any issues?" · "Would you use X?" (Behavioral anchor instead: "When did you last need X?")
@@ -35,7 +37,7 @@ status: v1-ready-to-pilot
 
 1. "Tell me about where you live: how long, who else, how did you find it?"
 2. "Who pays the rent: you, family, your company? How does the money actually move each month?" *(register + cash/UPI reality; tests M1 assumptions)*
-3. "What phone do you use? What languages do you read comfortably?" *(floor-audience check; S6)*
+3. "What phone do you use? What languages do you read comfortably?" *(tells us their reading comfort and phone reality)*
 4. "Show me the apps on your first home screen. Which did you open today?" *(the real competition; TAR-01 bet)*
 
 ## A1. Arrival (5 min): [TODAY] [tests M2]
@@ -203,7 +205,7 @@ Same guide, adapted: run A0, A2–A6.5 about their current renting life (no app 
 
 # Analysis contract (so the answers land back in the docs)
 
-- Every session gets logged against TAR-03 tags: which [OBSERVED] items gained/lost support, which [INFERRED] items survived or died, plus new needs (from A7/B4/C3) logged as candidate hypotheses with their evidence.
+- Every session gets logged against TAR-03 tags: which Seen-in-the-field items gained or lost support, which Our-read items survived or died, plus new needs (from A7/B4/C3) logged as candidate hypotheses with their evidence.
 - Concept-test outcomes (A8/B5/C4) update TAR-01's bets directly: each bet gets *supported / challenged / needs-more* after round one.
 - The creepy-line probe (Q26) reports which personalization elements were rejected and by which register: this feeds the personalization spec's boundaries, not just its features.
 - **Card-deck tallies across all three audiences:** per card: tenant picks, tenant kills, owner pushes, owner objections, internal heard/never-heard. A card strong on tenant picks + owner pushes + internal heard-demand is a build candidate; a card strong only in our own enthusiasm is not. Card 13's kill pattern (by register) feeds the personalization creepy-line boundary alongside Q26.

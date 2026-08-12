@@ -4,6 +4,8 @@
 
 The current app is treated here as a first draft. It taught us real lessons and we thank it for them, but it sets no limits. Every part below is open to be imagined from scratch.
 
+One companion to keep beside this document: for every feature a tenant would not ask for themselves (attendance, documents, entry and exit), how it earns willing participation lives in [TAR-05](TAR-05-how-features-earn-their-place.md).
+
 How we mark what we know:
 - **Verified** means we checked it ourselves and it is fact.
 - **Seen in the field** means our team observed or heard it from real tenants and staff. True, but from a small sample.
@@ -34,15 +36,15 @@ Technical defects of the current app live in a separate engineering register, no
 
 **What it becomes.** Arrival, not paperwork. The owner shows a code at move-in, the tenant opens the app, and the first thing they see is their own building's name and logo welcoming them. Setup asks for as little as possible, explains itself at every step, and can always be finished later. The waiting-for-approval moment shows the property's identity and a sense of progress, not a blank pending screen.
 
-**Why it matters.** Adoption is the gate every other goal stands behind, and research is blunt: the first minutes decide everything. Existing users manage; new users struggle and leave. The owner is the channel, so the handover moment between owner and tenant is part of the product, not something that happens before it.
+**Why it matters.** Adoption is the gate every other goal stands behind, and the field research is unambiguous: the first minutes decide everything. Existing users manage; new users struggle and leave. The owner is the channel, so the handover moment between owner and tenant is part of the product, not something that happens before it.
 
 **What the first draft taught us.**
 - The single most documented problem in all our research: first-time setup confused nearly every new user watched in the field. Buttons stayed disabled without explanation, steps did not look tappable, and finishing a step gave no feedback. *(Seen in the field)*
 - Some tenants are forced through attendance setup before they can see anything else, a wall on the very first open. *(Verified)*
-- An ordinary server hiccup at start-up can show a tenant a message implying they were evicted. This is the worst first impression we found anywhere. *(Verified)*
+- An ordinary server hiccup at start-up can show a tenant a message implying they were evicted. *(Verified)* Few first impressions could damage trust more. *(Our read)*
 - A flow inviting a tenant's landlord to join RentOk exists in the current app, but it is hidden from white-label users and its button does nothing. That is our warmest sales channel, wired to a dead end. *(Verified)*
 
-**What we must learn.** Where exactly the funnel loses people, step by step. What owners actually say when they hand the app to a tenant. Whether move-in is calm enough for a guided first run, or whether tenants need a "later" path for everything.
+**What we must learn.** Where exactly new tenants get stuck and give up, step by step. What owners actually say when they hand the app to a tenant. Whether move-in is calm enough for a guided first run, or whether tenants need a "later" path for everything.
 
 ---
 
@@ -53,7 +55,7 @@ Technical defects of the current app live in a separate engineering register, no
 **Why it matters.** Home is where the personalization promise becomes visible, where the property's brand lives, and where daily habit is built or lost.
 
 **What the first draft taught us.**
-- Today's home is a fixed stack of a dozen sections, the same for everyone, with no hierarchy: nothing is the headline. *(Verified)*
+- Today's home is a fixed stack of a dozen sections, the same for every tenant, in an order the backend cannot change. *(Verified)* Nothing on it reads as the headline. *(Our read)*
 - The announcements ring glows even when there is nothing new, so tenants learned to ignore it. The team itself flagged this. *(Seen in the field)*
 - Several sections show stale or broken content on every open, including a task list that is always empty and a status card that can tell an incomplete profile it is complete. *(Verified)*
 
@@ -78,14 +80,14 @@ Technical defects of the current app live in a separate engineering register, no
 
 ## 5. Profile, documents, and the agreement
 
-**What it becomes.** The safe place a tenant's renting life lives. Three clean layers: my home (room, rent, agreement, the emotional facts), my documents (each with an honest status: provided, pending, verified), and my account. The rental agreement becomes a first-class object: readable, downloadable, and explainable, with an assistant that answers "what does this clause actually mean" in plain words.
+**What it becomes.** The safe place a tenant's renting life lives. Three clean layers: my home (room, rent, agreement, the emotional facts), my documents (each with an honest status: provided, pending, verified), and my account. The rental agreement becomes something the app treats as fully real: readable, downloadable, and explainable, with an assistant that answers "what does this clause actually mean" in plain words.
 
 **Why it matters.** Paperwork is the highest-anxiety part of renting in India, and the research says it is where trust is won or lost. It is also the seed of something bigger: verified identity and documents that could one day travel with the tenant from property to property.
 
 **What the first draft taught us.**
 - Tenants reported edits that would not save and uploads that crashed, and the current app gives no feedback at all during document upload, so no one knows if anything worked. *(Seen in the field, and verified for the missing feedback)*
 - Signing the agreement fails often enough that staff hear about it, and the signing screen itself asks people to sign sideways. *(Seen in the field; verified)*
-- The profile screen tries to be a viewing screen and a fifty-field editing form at once. *(Verified)*
+- The profile screen tries to be a viewing screen and a very long editing form at once. *(Verified)*
 
 **What we must learn.** Where document submission actually stalls, step by step. Whether tenants even know their agreement is in the app today. Which profile fields anyone ever updates after moving in, so the rest can get out of the way.
 
@@ -99,7 +101,7 @@ Technical defects of the current app live in a separate engineering register, no
 
 **What the first draft taught us.**
 - The current flow handles requests and approvals competently, and its status logic is worth keeping. *(Verified)*
-- But after handover, the deposit simply vanishes from the app's story. There is no refund state at all. *(Verified)*
+- But after handover, the deposit simply vanishes from the app's story: we found no refund tracking anywhere in the flows. *(Our read)*
 - The condition checklist reads as the owner's tool against the tenant, not the tenant's protection. Nothing explains whose side it is on. *(Our read)*
 
 **What we must learn.** How often deposits are actually disputed and over what. Whether tenants see the checklist as protection or threat. What refund timeline owners will genuinely commit to showing.
@@ -108,14 +110,14 @@ Technical defects of the current app live in a separate engineering register, no
 
 ## 7. Attendance
 
-**What it becomes.** "Show up, get seen." Marking attendance returns a human acknowledgment, not a system log entry. History fills a calendar that feels like a streak, something maintained with quiet pride. Setup becomes warm, guided, skippable, and clear about why each permission is asked. The framing shifts from proving you are here to your record, yours to keep.
+**What it becomes.** "Show up, get seen." Marking attendance returns a human acknowledgment, not a system log entry. History fills a calendar that feels like a streak, something maintained with quiet pride. Setup becomes warm, guided, skippable, and clear about why each permission is asked. The idea shifts from proving you are here to keeping your own record.
 
 **Why it matters.** For students and hostel tenants this is the app's daily heartbeat, and daily use is what adoption means. It is also the most delicate feature we have: done carelessly it feels like surveillance, and for underage tenants it touches guardianship questions that deserve care, not defaults.
 
 **What the first draft taught us.**
 - Attendance setup is the wall most new users hit (see Joining, above). *(Seen in the field)*
 - Marking today is a maze of states with three different color systems for the same statuses. *(Verified)*
-- Nothing anywhere acknowledges the tenant who showed up every day for six months. *(Verified)*
+- Nothing anywhere acknowledges the tenant who shows up day after day. *(Our read)*
 
 **What we must learn.** How tenants actually feel about attendance: safety, surveillance, or indifference, and how that differs by register and by gender context. What parents expect to see, and what tenants are comfortable with parents seeing. The line is not ours to guess.
 
@@ -130,7 +132,7 @@ Technical defects of the current app live in a separate engineering register, no
 **What the first draft taught us.**
 - Menu timings shown to tenants have drifted from what the kitchen actually does, and tenants noticed. *(Seen in the field)*
 - Today's menu is plain text on cards: the day's most anticipated information gets the least loving presentation in the app. *(Our read)*
-- The QR-based meal check-in works and is worth keeping. *(Verified)*
+- The QR-based meal check-in is solidly built and, in our judgment, worth carrying forward. *(Our read)*
 
 **What we must learn.** Whether tenants check menus ahead or learn the rhythm by heart. Why meal confirmation gets skipped. Whether the "43 of 60 eating" idea reads as community or as pressure.
 
