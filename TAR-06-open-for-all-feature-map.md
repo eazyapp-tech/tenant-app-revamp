@@ -16,6 +16,16 @@ And because it is a lifestyle app, it must be useful on ordinary days, not just 
 
 **The standard this door is held to:** if anything makes renting in India harder than it should be, this app is where it gets easier. When someone asks how to make their renting life simpler, the honest answer should be this app. That is the ambition, and it is deliberately never finished. The features below are where we start; the list grows and the workflows sharpen for as long as renting has friction left in it.
 
+## A new standard for renting
+
+Renting already exists. How people rent exists too, and most of it is broken the same way everywhere: nothing is written down, nothing is standard, and nobody trusts anybody. The tenant does not trust the landlord to return the deposit. The landlord does not trust the tenant with the house. Neither trusts the broker. Flatmates move in with strangers and hope. Every one of these is a trust gap, filled today by a leap of faith or a fight.
+
+The cost of that distrust is measurable. India counted over 1.1 crore empty urban homes in its last census, while about 1.9 crore urban households needed a place to live. Those homes stay locked not because nobody wants them, but because their owners fear what happens when the wrong tenant moves in and the law moves slowly. Renting fell from more than half of urban Indian housing in 1961 to barely more than a quarter by 2011. Renting in India has been shrinking for fifty years, and trust is why.
+
+So the pieces in this document are not conveniences. Move-in and move-out records, condition checklists, agreements, police verification, ratings in both directions, the passport: each one closes a specific trust gap, and each one is deliberately fair to both sides. The tenant gets proof they left the room as they found it. The landlord gets proof of who is moving in. Neither side is the villain here, and neither is being protected against the other.
+
+This is the goal behind the goal: a way of renting that is fair, standard, and helpful to everyone involved, practiced first inside this app, until it stops being our process and becomes how renting is done.
+
 ## A renter's life, moment by moment
 
 The app is organized the way the renting life is. Five moments. Every feature lives inside one.
@@ -95,13 +105,13 @@ The everyday layer. This is where the app earns its place in ordinary life, and 
 
 **The flat of three bachelors.** Worth naming as a picture, because it is this door's most common real household and its best word-of-mouth story. Three friends rent a flat; the landlord has never heard of us. Inside one flat, the whole everyday layer is at work: a shared budget, rent and bills split three ways, reminders landing before due dates, the chore list rotating, the repair one of them paid for sitting in the ledger against next month's rent. When one moves out, the board finds the replacement, the deposit math settles cleanly, and the new flatmate walks in with a passport the other two have already seen. One flatmate installing the app quietly makes it three people living in it.
 
-**Local services.** The renter with no property manager has nobody to call. A curated directory of partnered services fills that gap: cleaning, repairs, maid, cook, tiffin, laundry, doctor visits, couriers, and legal help from verified lawyers. Everything in this layer is chosen, not scraped; a directory of everyone is a directory of no one.
+**Local services.** The renter with no property manager has nobody to call. A curated directory of partnered services fills that gap: cleaning, repairs, maid, cook, tiffin, laundry, doctor visits, couriers, legal help from verified lawyers, and CA and tax help for the renter who files returns: HRA proofs, deductions, the paperwork of a renting life, handled by verified professionals. Everything in this layer is chosen, not scraped; a directory of everyone is a directory of no one.
 
 **Offers.** A separate surface from services, on purpose: services are things you book and someone shows up; offers are deals brands bring to verified renters. Tenant insurance, medical insurance, zero-deposit and pay-in-parts products, brand deals that earn their place. Services must never feel like an ad shelf, and offers never pretend to be anything but offers.
 
 **The to-do list.** Daily chores, errands, the small logistics of a shared flat: a simple, fast list that is always there, with shared lists for flatmates so the gas cylinder actually gets bought. Other apps charge for a good one; here it comes with the life, and it is one more reason the app is opened on an ordinary day.
 
-**Small AI companions.** Light, independent, each one useful alone. The **trip planner**: tell it where you are going, get a plan. The **meal planner**: for the renter who cooks, or keeps a cook, it plans the week's meals and shops the list, shaped to their food, their budget, their household. The small pleasures that make this a lifestyle app rather than a filing cabinet.
+**Small AI companions.** Light, independent, each one useful alone. The **trip planner**: tell it where you are going, get a plan. The **meal planner**: for the renter who cooks, or keeps a cook, it plans the week's meals and shops the list, shaped to their food, their budget, their household. The **cost-of-living guide**: what it really costs to live in Mumbai, or Gurugram, or Pune, answered for this renter in particular, because the app knows their life well enough to draft the budget for the move. The companion list is meant to grow: each new one is cheap to add, and each is one more ordinary day the app gets opened. The small pleasures that make this a lifestyle app rather than a filing cabinet.
 
 ---
 
@@ -135,7 +145,7 @@ Anyone who has ever rented through a RentOk-powered property arrives with theirs
 
 ### 5. Moving on
 
-**The notice, protected.** The vault already knows the notice period and the agreement's end; the app reminds before each is due and drafts the notice letter.
+**The notice, protected.** The vault already knows the notice period and the agreement's end; the app reminds before each is due and drafts the notice letter, ready for the renter to edit, and, since the landlord's details are already saved, ready to send with one tap.
 
 **The next home, offered at the right moment.** As the agreement's end approaches, the app already knows this renter: their preferences from the passport, the kind of home they chose last time. The Broker starts suggesting what their next home could be, and one tap opens the full search. The end of one tenancy flowing into the start of the next is not churn; it is the renting life continuing inside the app, and each move is a chance at a better-run home.
 
@@ -154,6 +164,10 @@ A named thread running through the whole door, because it is bigger than any one
 A renter living in a property that is not on RentOk saves their landlord's details once. From then on, the renter chooses which activities reach the landlord automatically: the move-in report to acknowledge, the logged repair that should be reimbursed, the running ledger of what gets deducted from next month's rent, the move-out report to sign. The landlord starts receiving structured, professional, dated documents from their own tenant, each one carrying our name.
 
 And the renter rates the landlord, whether or not the landlord has ever touched RentOk. Every stay leaves feedback both ways, in every state we operate. A landlord's reputation starts accumulating before they arrive, so the day they do log in, they find a history already waiting, and the renters who come after get what renters have never had: a way to know what a landlord is like before signing.
+
+**Reaching the landlord who never signed up.** The landlord line also speaks to the landlord about the things a landlord cares about. The agreement is about to expire: renew it here, properly, without a broker. Police verification expires every year: get it done again, from the app, in minutes. The stay has ended: rate your tenant, so your experience counts too. Each message is useful on its own, each is about their own property and their own tenant, and each gives the landlord one more reason to be curious about what their tenant has been using. Two rules govern this channel. Each side hears what serves them: renters get what helps renters, landlords get what helps landlords, never a cold pitch. And nothing about the renter's private life in the app is ever reported: what a renter browses, plans, or considers is theirs alone. An expiring agreement is a shared fact; a search for the next home is not.
+
+**Refer your landlord.** The one referral this app pays real money for. A renter who brings their landlord onto RentOk's management products has delivered a business customer, and the reward is cash. (A variant worth testing alongside: rent coins, redeemed against the renter's own monthly rent.) This is not the invite-your-friends mechanic this project removed elsewhere; nobody is farming contacts. It is a fee for the most natural sale in the ecosystem, made by the one person both sides already trust.
 
 Where this leads: when a renter adds landlord details, a landlord profile takes shape in the RentOk ecosystem. The landlord gets a message: your tenant shared this with you, see the full picture here. When they log in with nothing but their phone number, everything already linked to them is waiting: their tenants, their property, the payment history, the reports. From there, the landlord app and the manager app are one step away. RentOk's vision is the whole of renting: single-family homes, multi-tenant buildings, PGs, co-living, hostels, serviced apartments, short stays, commercial property, and the firms that manage all of it. The landlord line is how this door feeds that vision: the tenant builds the landlord's front door without either of them experiencing it as sales.
 
@@ -205,3 +219,5 @@ Three layers, in the order they unlock. The full strategy gets its own document;
 ## Why this holds together
 
 One loop, running through all five moments: the app is useful enough to live in, living in it builds a record, the record opens the next door, and the next door was found in the app. Browse brings renters in, the everyday layer keeps them, the passport makes leaving costly in the only honest way: not by locking anything, but by having witnessed a life no other app can vouch for. And through the landlord line, every renter quietly brings their landlord to ours.
+
+Underneath the loop sits the larger bet. Rent this way at enough scale and it stops being an app's process and becomes the standard: the trust deficit closes gap by gap, locked homes open, and renting becomes what it should have been all along, fair, trustworthy, and rewarding for everyone in it. That is what solving renting means, and it is solved the way anything real is solved: slowly, one closed gap at a time.
