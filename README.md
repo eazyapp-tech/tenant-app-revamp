@@ -1,4 +1,4 @@
-# RentOk Tenant App — Revamp
+# RentOk Tenant App: Revamp
 
 Design, product, and research documents for the new RentOk tenant app: a fresh build, imagined from scratch, that will replace the current production app once ready. No app code lives here.
 
@@ -6,21 +6,21 @@ Design, product, and research documents for the new RentOk tenant app: a fresh b
 
 ## Start here
 
-**[TAR-00 · Vision and Requirements](TAR-00-vision-and-requirements.md)** — what we are building, why, for whom, the promises we've made, and what success looks like. Read this first; everything else hangs off it.
+**[TAR-00 · Vision and Requirements](TAR-00-vision-and-requirements.md)**: what we are building, why, for whom, the promises we've made, and what success looks like. Read this first; everything else hangs off it.
 
 ## Then, in order
 
-1. **[TAR-01 · Brief](TAR-01-brief.md)** — the product bet in detail: personalization, growth, build waves. *(Being updated to the new-build framing; TAR-00 is current where they differ.)*
-2. **[TAR-02 · Design Language](TAR-02-design-language.md)** — how it looks, moves, and speaks: the laws, the typeface, color, motion. *(Plain-language pass pending; TAR-00 is current where they differ.)*
-3. **[TAR-03 · What Each Part Must Become](TAR-03-what-each-part-must-become.md)** — module by module: the ambition, what the first draft taught us, what research must validate.
-4. **[TAR-04 · Research Kit](TAR-04-research-kit.md)** — interview guides and concept tests for tenants, owners, and the internal team.
+1. **[TAR-01 · Brief](TAR-01-brief.md)**: the product bet in detail: how the app spreads, personalization in practice, build phases, risks.
+2. **[TAR-02 · Design Language](TAR-02-design-language.md)**: how it looks, moves, and speaks: the laws, the typeface, color, motion, states, voice, and the named bans.
+3. **[TAR-03 · What Each Part Must Become](TAR-03-what-each-part-must-become.md)**: module by module: the ambition, what the first draft taught us, what research must validate.
+4. **[TAR-04 · Research Kit](TAR-04-research-kit.md)**: interview guides and concept tests for tenants, owners, and the internal team.
 
 ## Reference
 
-- **[Current App Feature Map](current-app-feature-map.md)** — everything the existing app does today.
-- **[Backend Requirements Ledger](backend-asks-ledger.md)** — what the new service layer must provide, collected as design surfaces it.
-- **`research/`** — the studies behind the decisions: teardowns of the best Indian consumer apps, world-class design systems, typeface and color research, craft audits.
-- **`engineering/`** — for the engineering team: the current app's [known-defects register](engineering/known-defects-register.md) and the [detailed technical diagnosis](engineering/legacy-app-detailed-diagnosis.md).
+- **[Current App Feature Map](current-app-feature-map.md)**: everything the existing app does today.
+- **[Backend Requirements Ledger](backend-asks-ledger.md)**: what the new service layer must provide, collected as design surfaces it.
+- **`research/`**: the studies behind the decisions: teardowns of the best Indian consumer apps, world-class design systems, typeface and color research, craft audits.
+- **`engineering/`**: for the engineering team: the current app's [known-defects register](engineering/known-defects-register.md) and the [detailed technical diagnosis](engineering/legacy-app-detailed-diagnosis.md).
 
 ## Ground rules these documents follow
 

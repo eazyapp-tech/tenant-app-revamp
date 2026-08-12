@@ -1,176 +1,144 @@
+# TAR-02 · The Design Language
+
+**Read [TAR-00](TAR-00-vision-and-requirements.md) first.** This document describes how the new app looks, moves, and speaks, and why those choices survive being repainted in any client's colors. Detailed measurements, specifications, and the studies behind each choice live in the `research/` folder for those who want the depth.
+
+> **Naming is deferred.** This system will eventually carry a name, and naming it needs several stakeholders in the room. Until then it is simply the RentOk tenant app design language. Nothing below depends on the name.
+
+*Last updated 12 August 2026. Owner: Sanchay.*
+
 ---
-title: TAR-02 RentOk Tenant App Design Language
-date: 2026-08-10
-tags: [rentok, tenant-app, revamp, design-system]
-owner: Sanchay
-status: v1-proposal
----
-
-# TAR-02 · The RentOk Tenant App Design Language
-
-> The companion to [[TAR-01 Brief]]. That document says what we are betting. This one says how everything will look, move, and feel, and why those choices survive being repainted in a client's colours.
-
-> [!NOTE] Naming is deferred
-> This system will eventually carry a name, and a named language is part of the benchmark bar set in [[TAR-01 Brief]]. But naming it needs several stakeholders in the room, so it stays "the RentOk tenant app design language" until that conversation happens. Nothing below depends on the name.
 
 ## What this system believes
 
-**A tenant should feel the app belongs to the place they live, not to the company that sold it.** Every rule below is downstream of that.
+A tenant should feel the app belongs to the place they live, not to the company that sold it. Every rule below serves that.
 
 ### The four laws
 
-**1. The place is the hero, and it is made of facts, not photographs.**
-We cannot art-direct the client's building, and nothing arrives in the post for us to make desirable. So the hero is the tenant's own facts, set with real weight: *Room 302. Third floor. Eighteen months. ₹25,000 held.* The property's logo, name and address frame those numbers; the numbers carry the screen.
+**1. The hero is the tenant's own facts.** We cannot art-direct a client's building, and nothing physical arrives in the post for us to glorify. What we can render with real weight is the tenant's own truth: Room 302. Third floor. Eighteen months. Rs 25,000 held. The property's logo, name, and address frame those facts; the facts carry the screen.
 
-**2. Timeless in structure, modern in behaviour.**
-Restraint holds the still image: type, grid, honest photography, none of this year's trend. Motion carries the modernity. A screenshot should be hard to date; the moment a finger touches it, it should feel like next year's software.
+**2. Timeless in structure, modern in behavior.** The still image shows restraint: type, grid, honest photography, none of this year's visual fashion. Motion carries the modernity. A screenshot should be hard to date; the moment a finger touches the screen, it should feel like next year's software.
 
-**3. The ceiling is world-class, the floor is dignified.**
-The app must delight a design-literate twenty-six-year-old in a Bangalore co-living and remain completely usable for a migrant tenant on a budget LCD screen in daylight. Sophistication reveals itself as someone engages. Nothing basic is ever gated behind novelty, and there is never a stripped-down "simple mode", which is only a polite insult.
+**3. The ceiling is world-class, the floor is dignified.** The app must delight a design-literate professional in a Bengaluru co-living and remain fully usable for a migrant worker on a budget phone in daylight. Sophistication reveals itself as someone engages. Nothing basic hides behind novelty, and there is never a stripped-down "simple mode", which is only a polite insult.
 
-**4. Identity lives everywhere except colour.**
-A client replaces our palette and our logo. What stays is the typeface, the way type is scaled and tracked, how things move, how surfaces separate, the illustration voice, and the shape of our moments. That constraint is harder than what the apps we admire had to solve, and meeting it is what would make this worth citing.
+**4. Identity lives everywhere except color.** White-label clients replace our palette and logo with theirs. What stays ours is the typeface, the way type is scaled, how things move, how surfaces separate, the voice, and the shape of our moments. Meeting this constraint well is what would make this system worth citing by other teams.
 
----
+### The reference bar
 
-## Type — the one expensive commitment
-
-Everything else in this system is disciplined and cheap. The typeface is where we spend, because it is what carries identity when colour cannot.
-
-### The face: Anek, by Ek Type, Mumbai
-
-- **Ten Indian scripts** — Bangla, Devanagari, Gujarati, Gurmukhi, Kannada, Latin, Malayalam, Odia, Tamil, Telugu — **all metrically identical** (x-height 0.489 em, cap 0.639 em, matching digit advances). A Tamil or Telugu build becomes a file swap with nothing reflowing. No other family offers this.
-- **Real weights on a continuous axis**, 100 to 800, plus a **width axis 75 to 125**.
-- **Tabular figures**, so money aligns.
-- **SIL OFL 1.1** — unlimited use inside unlimited client-branded apps, forever, free. This matters more than taste: every commercial foundry licenses per app, and one of them explicitly forbids passing the font to a third party, which is exactly what shipping a white-label build does.
-- **It ships smaller than what we have.** 184 KB for one file with every weight, against 457 KB today for two fonts with one real weight each.
-
-Two things it costs us, both planned rather than discovered later: Anek sets about 10% smaller than Inter at the same size, so the whole type scale rises about 12%; and Hindi support is an 846 KB file when we add it.
-
-**Why an Indian foundry is the right answer and not a sentimental one:** Inter, Poppins, Geist and Plus Jakarta all read as "some app". A face drawn in Mumbai for ten Indian scripts reads as a decision, and it is a decision no competitor can copy without also copying the reasoning.
-
-### The scale, and the middle we forbid
-
-Every reference app shares one structural trick: **body type has a hard ceiling and display type is three to six times larger, with nothing usable in between.** That is what prevents the mushy mid-sized paragraph that makes an app look like a form.
-
-| Role | Size | Weight | Tracking | Use |
-|---|---|---|---|---|
-| Display XL | 44 | 700–800, width 85 | −0.5 | the one number on a hero screen |
-| Display | 32 | 700 | −0.5 | screen titles, amounts |
-| Display S | 24 | 600 | −0.4 | section heroes, card amounts |
-| Title | 18 | 600 | −0.2 | card headings |
-| Body L | 16 | 400–500 | −0.2 | **the ceiling for reading text** |
-| Body | 14 | 400 | 0 | default |
-| Caption | 12 | 400–500 | 0 | metadata, helper text |
-| Eyebrow | 10 | 600, all caps | **+1.5** | the label above a display line |
-| Micro | 8 | 600, all caps | +1.5 | tags, chips |
-
-**Tracking is a property of size and script, not a decision a developer makes.** For Latin: negative above 15, zero below, positive only on capitals. Every reference system does the first half and most do the second, and the sign is doing real work — **negative means this is a statement, positive means this is a label.** That is identity no client colour can overwrite, and it is the highest quality-per-hour change available to us.
-
-**The script condition, which most systems never need and we cannot skip.** Negative tracking is a Latin rule. Tightening Devanagari damages it: the conjuncts and the marks above and below the line need their room, and the connecting line across the top makes crowding worse rather than tighter. So Indic scripts take zero tracking at every size, and more line height than Latin at the same size. Mixed lines — a rupee figure inside a Hindi sentence — follow the script of the sentence, not the number. Our whole typeface argument rests on ten Indian scripts; a rule that only works in English would undo it.
-
-**All caps exists only at 8 and 10.** That single constraint produces the composition we will use everywhere: a tiny wide-tracked label over a large tight line. *"RENT DUE" over "₹8,500 by 5 March."*
-
-**Money is always tabular.** Not globally, because tabular digits look gappy in prose, but on every amount, passbook row, dues column and receipt. Indian grouping is a solved problem in a library we already ship: ₹1,50,000, never ₹150,000.
-
-**Weight has a ceiling of 700.** Emphasis comes from size and colour. This is what stops a screen from shouting.
-
-**The display voice is the width axis, not a serif.** Condensing Anek to width 85 at weight 800 gives us a hero treatment that is genuinely uncommon, costs nothing, and adds no licence exposure. We deliberately reject the display serif that Kiwi, CRED and Stable Money use: that signal is aimed at an affluent, English-first, credit-card-holding reader, and to a tenant checking whether their rent went through it reads as a legal notice.
+Our closest relatives are not other property apps. They are the Indian fintech apps that made boring, adult financial products feel worth owning and showing off. Rent, receipts, and paperwork are the most boring products of all. Nobody has done for renting what those apps did for money. From studying them at source-code level, one meta-lesson: each makes exactly one expensive, unmistakable investment and keeps everything else disciplined. Ours is the typeface.
 
 ---
 
-## Colour — a system that survives being replaced
+## Type: the one expensive commitment
 
-The client hands us a brand colour. **We never render it.** We render a tone selected from a ramp built on its hue. Their brand is recognisable on every screen; it is never the thing text has to sit on.
+**The face is Anek, drawn by Ek Type in Mumbai.** Why this one, out of everything money could buy:
 
-This is possible because of one property of the colour space we use: **its lightness axis is the exact input to the contrast formula.** Contrast between any two colours depends only on their two tone numbers, whatever the hue or saturation. So we fix the tones, let the client own the hue, and accessibility stops being something we check and starts being something we cannot violate.
+- **It speaks ten Indian scripts** (Devanagari, Tamil, Telugu, Kannada, Bangla, Gujarati, and more), all built to identical proportions. A Hindi or Tamil version of the app becomes a file swap where nothing shifts or breaks. No other family in the world offers this.
+- **It has real weights.** The current app ships only one weight and fakes every bold, which is part of why it looks soft and cheap. Anek gives us the full range genuinely, plus a width range that gives us a distinctive voice for big numbers without buying a second font.
+- **Its numbers can align in columns**, which money screens require.
+- **Its license is free forever, for unlimited client apps.** Every commercial font we evaluated charges per app, which is poison for a white-label product. Here, money would buy a worse outcome. That is rare and worth savoring.
+- **It is an Indian face from an Indian foundry.** The common alternatives make every app look like every other app. This reads as a decision, and it is one no competitor can copy without copying the reasoning.
 
-**The pipeline:** brand colour in → extract hue → build a light and a dark scheme → read every token by role. Extreme colours are handled by *discarding saturation rather than clamping it*: a neon green and a muted sage produce the same well-behaved ramp, differing only in hue. A near-grey brand colour switches to a neutral scheme instead of producing a colourless app that looks broken. It needs no new dependency; the library is already in our lockfile.
+**How type behaves:**
 
-**Neutrals are ink at reduced opacity, never a separate grey ramp.** Four steps: 90% for headings, 70% for subheadings, 50% for body, 30% for disabled, and 10% for borders. Every reference app does this and none ships greys, because a hardcoded grey breaks the moment a client picks a dark background.
+- **Reading text has a ceiling and display has a floor, with nothing mushy in between.** Screens read as one big statement plus quiet support, never as a wall of medium-sized text. This single rule is most of what separates the apps we admire from forms.
+- **Spacing between letters follows the size and the script.** Big statements tighten slightly; tiny labels spread slightly and go uppercase. That contrast is a signature no client color can erase. And for Indian scripts the tightening switches off, because Devanagari and its cousins need their room; the rule bends to the script, never the reverse.
+- **Money is always aligned, always grouped the Indian way.** Rs 1,50,000, never 150,000. Amounts, durations, and room numbers are three different things and are styled as three different things: a room number is a name, not a quantity.
+- **Emphasis comes from size and placement, not from ever-bolder text.** There is a named ceiling on boldness. This is what keeps screens from shouting.
 
-**Meaning colours are locked and are not white-labelled.** Paid is always the same green; overdue is always the same red. A client does not get to decide what "payment failed" looks like. This fixes a defect shipping today, where our semantic colours derive from the brand colour — hand a property a red brand and the money screen stops telling paid from overdue.
+---
 
-**Colour never carries meaning alone.** Every state has an icon and a word beside it. This is an accessibility requirement anyway, and it is also what makes a red-branded property merely awkward instead of dangerous.
+## Color: a system that survives being replaced
 
-**Light first.** Dark is a stage we walk onto for celebration moments, not a theme. Our tenants read outdoors, on cheap panels, in daylight.
+The client hands us one brand color. **We never place text on that raw color and we never display it as-is.** Instead we derive a complete palette from it: a family of related tones, each with a guaranteed-readable partner for text. The client sees their brand everywhere; the system guarantees no combination is ever illegible. The mathematics behind this ships in a library the app already carries, and the derivation handles hostile inputs gracefully: a neon color calms down, a near-gray color gets a dignified neutral scheme, a too-light color never receives white text.
+
+- **Grays do not exist.** Every "gray" is the ink color at reduced strength, so the whole hierarchy re-derives itself correctly whatever background the client chose.
+- **Meaning colors are locked and are not for sale.** Paid is always the same green. Overdue is always the same red. A client's brand can be red; their "payment failed" cannot become green. In the current app the meaning colors follow the brand color, which means a red-branded property cannot tell paid from overdue at a glance. The new system makes that impossible.
+- **Color never carries meaning alone.** Every state also has an icon and a word. This is required for accessibility, and it means a color collision is only ever cosmetic, never dangerous.
+- **Light first.** Our tenants read outdoors, in daylight, often on inexpensive screens where dark themes turn to mud. Dark is a stage we step onto for celebration moments, not a theme.
 
 ---
 
-## Surface and depth
+## Surfaces, space, and depth
 
-**Hairlines, not shadows.** Cards are a white surface on a near-white background, separated by a half-pixel border at 10% ink. One shadow exists in the whole system, reserved for things that genuinely float, such as a bottom sheet. This is most of why the calmest app we studied feels expensive, and it costs less to render.
-
-**Radii stay in the 4 to 16 range**, with pills for chips and buttons. We explicitly reject the very large radii currently fashionable: they are the most obviously time-stamped thing in this study, they eat vertical space on a five-inch screen, and they fight with client logos of unknown shape.
-
-**Spacing is a 4-point rhythm.** Every gap is a multiple of 4.
-
----
+- **Hairlines, not shadows.** Cards are calm surfaces separated by fine lines, the way the most expensive-feeling financial apps do it. One soft shadow exists in the whole system, reserved for things that genuinely float, like a sheet sliding up.
+- **Corners are consistent and modest.** One radius per kind of thing. We reject the giant balloon corners currently in fashion: they will date fast, they waste vertical space on small phones, and they fight client logos of unknown shape.
+- **Spacing follows one rhythm.** Every gap comes from a single scale, and density is a deliberate per-screen choice: air around the hero facts, compactness in ledgers and lists, and a written reason for each.
 
 ## Motion
 
-Two rules govern every number below.
+Two rules govern every animation:
 
-**Exit is always faster than entry.** The tenant has already decided to leave; do not make them wait.
+1. **Exits are faster than entrances.** The tenant already decided to leave; never make them wait.
+2. **The more often something is touched, the less it animates.** Switching tabs happens dozens of times a session and takes zero time. Payment success happens once a month and earns a real moment.
 
-**Frequency is inversely proportional to duration.** The bottom navigation is tapped dozens of times a session and gets nothing. Payment success happens once a month and can afford a real moment. Before choosing a duration, count how often the thing is touched.
+Color and transparency changes never bounce; only position and size may spring. Anything a finger drags follows the finger exactly. And from day one the app honors the system's reduce-motion setting, because the people who need it are the people we hear from least.
 
-| Role | Duration | Feel |
-|---|---|---|
-| Tab switch, keyboard-adjacent actions | 0 ms | instant |
-| Button press, toggle, chip | 100 ms | quick ease-out |
-| Colour and state changes | 150 ms | standard |
-| Expand | 250 ms | decelerating |
-| Collapse | 200 ms | accelerating |
-| Sheet in | 300 ms | decelerating |
-| Sheet out | 200 ms | accelerating |
-| Page transition | 300 ms | emphasized |
-| Shared element | 350 ms | emphasized |
-| Celebration | 800 ms | spring, slight overshoot |
+## Iconography
 
-**Colour and opacity never overshoot; only position and size are allowed to spring.** Anything a finger is dragging follows the finger with real velocity rather than playing a fixed animation.
+- **One icon family, everywhere.** The current app runs three unrelated icon systems side by side; the new app runs exactly one, whose thickness can match the text it sits beside, so an icon and its label always feel drawn by the same hand.
+- **Four sizes, no improvisation.** Icons come in four fixed sizes tied to the text sizes they accompany. Anything larger is an illustration and is treated as one.
+- **Selection is a fill, not a swap.** A chosen icon fills in smoothly; an unchosen one is an outline. One icon, one state, no mismatched pairs.
+- **An icon never carries meaning alone.** Every meaningful icon has a label or an unmistakable position. Under white-labeling, an icon tinted by an unknown brand color on an unknown background cannot be trusted to be visible, so words back it up.
 
-**Reduced motion ships on day one.** Retrofitting it across five hundred files later is miserable, and the people most likely to need it are the people we are least likely to hear from.
+## States: designing for the unhappy path
 
----
+Every interactive element answers for eight situations: resting, pressed, selected, disabled, focused, loading, empty, and failed. Two get special weight because our audience lives there:
+
+- **Waiting and offline are first-class designs, not afterthoughts.** A tenant on a weak connection sees loading, retry, and stale data more often than a well-connected one sees anything. "This was updated 3 hours ago" is an honest state of its own, distinct from loading and from error.
+- **Pressed feedback is a slight shrink, not a color change**, because it is the one response that works identically under every client's palette.
+- **Failure explains itself.** A disabled button says why nearby. An error names the problem and the way out. Raw technical messages never reach a tenant's eyes.
 
 ## Voice
 
-**Concrete, not clever.** The best-written app we studied earns its charm in English wordplay that does not survive translation and does not land for a tenant with limited English. We take its concreteness and leave its cleverness: name the actual thing — rent, deposit, room, food, complaint.
+- **Concrete, not clever.** Name the actual thing: rent, deposit, room, food, complaint. Wordplay does not survive translation and does not land for a tenant reading in their second language.
+- **Plain first, warm second.** "Rs 8,500 due in 4 days" before any personality. Warmth lives in the moments: the welcome, rent paid, the goodbye.
+- **Never exclusive.** The membership-and-tiers register of Indian fintech is exclusionary when applied to housing. Nobody should feel their home is a club they might not get into.
+- **Built for translation from day one.** Hindi first among them. Copy is written so it translates without dying, and every screen survives longer words.
 
-**Plain first, warm second.** "₹8,500 due in 4 days" before any personality. Warmth lives in the moments, not in every label.
+## Touch, comfort, and access
 
-**Never exclusive.** The aspirational register of Indian fintech — membership, eligibility, tiers — is exclusionary when applied to housing. Nobody should feel their home is a club they might not get into.
+- **Targets fit thumbs, with breathing room.** Every tappable thing meets the stricter of the international standards, with space between neighbors, because a mistap on a money screen costs trust.
+- **The screen respects the hand.** Primary actions live where a thumb rests. Destructive actions never sit in the easiest spot.
+- **Text can grow without breaking.** When a tenant raises their system font size, containers grow and layouts adapt; nothing clips, and an amount is never truncated, because a cut-off amount is a wrong amount. The current app fails this at even modest settings; the new one treats it as law.
+- **The app speaks to screen readers.** Every amount, date, and button announces itself meaningfully. A tenant who cannot see the screen can still answer: how much do I owe, by when, and did my payment go through.
+- **Touch has a pulse.** Gentle physical feedback marks confirmed outcomes: rent confirmed, attendance accepted, an error stopping you. Never decoration, never repetition, always the outcome rather than the tap, and always accompanied by something visible.
 
----
+## The dignity laws
+
+- **Age gates content, never ability.** Under-18 tenants get curated, age-appropriate content with all profiling off. That is Indian law and our floor.
+- **No stereotype ever ships.** Personalization keys on needs and rules, not on assumptions about gender, age, or class.
+- **The floor is served silently.** Budget phones, daylight, limited English, expensive data: accommodated everywhere, announced nowhere.
+
+## The bans
+
+A design language is enforced by what it forbids. The named prohibitions:
+
+1. No text on the client's raw brand color.
+2. No meaning carried by color alone.
+3. No boldness above the named ceiling; no reading text below the named floor.
+4. No letter-tightening on Indian scripts.
+5. No giant fashion corners; no decorative blur.
+6. No animation on high-frequency actions; no bounce on color or fade.
+7. No icon without a label or unmistakable position.
+8. No fixed-height container around text that can grow.
+9. No raw technical error shown to a tenant.
+10. No dark-only design; daylight is the default condition.
+11. No prize mechanics attached to rent.
+12. No "simple mode."
 
 ## The signature moments
 
-Three moments carry the brand. Each one is designed to be worth a screenshot, and none of them is a gimmick.
+Three moments carry the brand, designed to be worth showing someone:
 
-**1. Arrival.** The property's logo resolves at boot. This is the only per-property brand element and today it is fetched, cached, and shown nowhere. The first thing a tenant sees should be their home's mark, not ours.
+1. **Arrival.** The property's own logo resolves on first open. The tenant's first impression is their home's mark, not ours.
+2. **Rent, done.** The screen settles into success and the receipt appears as a document: designed like paper, worth keeping, ready to send. Tenants genuinely need this document, for tax, for verification, for proof of address, which is why it will be the most shared screen in the app without a single gimmick.
+3. **Showing up.** Marking attendance or a meal returns a human acknowledgment, and history fills in like a streak: quiet pride, daily.
 
-**2. Rent paid.** The screen settles into the success colour and a receipt becomes a paper object: amount in display type, property and room in body, transaction reference in a monospaced line, date set small along the edge. One share button. **We are luckier than the apps we admire here — a rent receipt is a document an Indian tenant genuinely needs, for tax claims on house rent, for police verification, for proving where they live.** They had to invent a reason to make a receipt beautiful. Ours is already needed, which makes it the most-shared screen in the app without a single nudge.
+## What "benchmark" means here
 
-There is no prize wheel after rent. Rent is an obligation, often paid late, sometimes with borrowed money, sometimes by a company the tenant never sees. A slot machine there trivialises it.
-
-**3. Showing up.** Marking attendance or a meal returns something human rather than a toast, and the history fills in like a streak. This is the daily loop, and the daily loop is what makes the app a habit.
-
----
-
-## What "benchmark" means concretely
-
-This is only a real design language if someone outside RentOk can read it and build something consistent with it. That means publishing: the principles, the type scale with its tracking rules, the colour derivation pipeline with its guardrails, the motion tokens with real numbers, the composition patterns, and honest do-and-don't examples. The system we learned the most from is the one that open-sourced itself.
-
-## What ships first
-
-The design language is Wave 1's first deliverable because everything else inherits it. Three fixes can land immediately, before any of it:
-
-1. **Turn on tabular figures** for money. The font we already ship supports it and it has never been switched on; passbook and dues columns are misaligned today.
-2. **Fix the thirty-three references to a font that does not exist** in the services module, which silently fall back to the system default on Android.
-3. **Decide the Flutter version floor**, because below a certain version a variable font renders every weight at its default.
+This system counts as a benchmark only if someone outside RentOk could read its published form and build something consistent with it: the principles, the type rules, the color derivation, the motion values, the bans, and honest examples of right and wrong. The systems we learned the most from are the ones that published themselves. Ours will be publishable.
 
 ## Changelog
 
-- 2026-08-10: v1. Written from the fintech teardown (source-code extraction of Scapia, Kiwi, slice, Stable Money, CRED, Jupiter, Fi), the palette and motion research, and the typeface research (font binaries measured, weights rendered in Flutter). Companion to [[TAR-01 Brief]].
-- 2026-08-11: naming removed. A name needs several stakeholders, so the system stays unnamed until that conversation; nothing in the document depended on it.
+- 10 August 2026: first version, assembled from the fintech teardown, brand-system synthesis, typeface, color, and craft research (all in `research/`).
+- 12 August 2026: rewritten in plain language for the full audience. Added: iconography, states, voice, touch and access, the dignity laws including the under-18 rule, and the named bans. Measurement detail moved entirely to `research/`.

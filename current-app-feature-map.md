@@ -1,14 +1,14 @@
 ---
-title: Current Tenant App — Full Feature Map
+title: Current Tenant App: Full Feature Map
 date: 2026-08-11
 tags: [rentok, tenant-app, revamp, feature-map]
 owner: Sanchay
 status: reference
 ---
 
-# Current Tenant App — Full Feature Map
+# Current Tenant App: Full Feature Map
 
-Every feature that exists in the app today, grounded in the code (not the old research notes). Organized by module. This is the starting inventory for the redesign — what to keep, cut, merge, or rebuild gets decided against this list.
+Every feature that exists in the app today, grounded in the code (not the old research notes). Organized by module. This is the starting inventory for the redesign: what to keep, cut, merge, or rebuild gets decided against this list.
 
 ---
 
@@ -25,7 +25,7 @@ Every feature that exists in the app today, grounded in the code (not the old re
 - OTP send + verify
 - WhatsApp opt-in toggle at login
 - New user vs. existing user vs. self-invite-needed routing
-- Multi-property detection — "Choose Property" picker when one phone number has tenancies at more than one property
+- Multi-property detection: "Choose Property" picker when one phone number has tenancies at more than one property
 - Search/filter within the property picker
 - Join another property from within the picker
 - Self-invite via property App ID/invite code
@@ -41,7 +41,7 @@ Every feature that exists in the app today, grounded in the code (not the old re
 - Notification bell
 - Pull-to-refresh
 - **Sections shown (each independently gated by data/config):**
-  - My Account snapshot — dues, credits, advance payment entry, receipt download
+  - My Account snapshot: dues, credits, advance payment entry, receipt download
   - Pending tasks list (eviction reminders, checklist nudges, external links)
   - Electricity meter balance + recharge link
   - My Complaints/Issues snapshot with quick-call and WhatsApp-to-staff
@@ -77,7 +77,7 @@ Every feature that exists in the app today, grounded in the code (not the old re
 - Share profile (screenshot + WhatsApp)
 - My Renting Info: property, unit, rent, deposit, move-in date, tenancy duration
 - Personal details view/edit: demographics, family/guardian info, previous & permanent address, education, employment, banking, social/professional links
-- Document upload: Aadhaar, ID, selfie, college ID — camera or gallery, crop
+- Document upload: Aadhaar, ID, selfie, college ID: camera or gallery, crop
 - Document verification status per document
 - Rental agreement: view, digital signature, download
 - Background verification status + explainer
@@ -164,7 +164,7 @@ Every feature that exists in the app today, grounded in the code (not the old re
 - Tap-through to the relevant flow (currently only fully wired for move-out-related notifications)
 
 ## 14. Cross-Cutting / Shared
-- Bottom navigation, contents driven by white-label config (home, accounts, services, profile, tickets, attendance, offers, food — up to 4 shown by default)
+- Bottom navigation, contents driven by white-label config (home, accounts, services, profile, tickets, attendance, offers, food: up to 4 shown by default)
 - Deep links: web, WhatsApp, and in-app (to spin wheel, monthly savings, offers) destinations
 - PDF viewer (agreements, receipts, police verification)
 - Image viewer + in-app image cropper
@@ -177,8 +177,8 @@ Every feature that exists in the app today, grounded in the code (not the old re
 ---
 
 ## What's notably *not* a real feature today, despite looking like one
-- **Messaging** — no in-app messaging; what exists is the property's WhatsApp Business number, used outside the app.
-- **Reviews** (as a tenant-facing module) — the survey/review engine exists and runs, but only over WhatsApp; nothing in-app today.
-- **Roommate details** — placeholder screen, not functional.
-- **Onboarding carousel** — built, not reachable from anywhere.
+- **Messaging**: no in-app messaging; what exists is the property's WhatsApp Business number, used outside the app.
+- **Reviews** (as a tenant-facing module): the survey/review engine exists and runs, but only over WhatsApp; nothing in-app today.
+- **Roommate details**: placeholder screen, not functional.
+- **Onboarding carousel**: built, not reachable from anywhere.
 - Several "reward"/"offer" surfaces exist as separate, overlapping systems (RentPass rewards, general Offers, scratch-card credits) rather than one unified rewards model.
