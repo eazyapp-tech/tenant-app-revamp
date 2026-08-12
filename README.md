@@ -1,25 +1,30 @@
-# RentOk Tenant App — Revamp Documentation
+# RentOk Tenant App — Revamp
 
-Design and product thinking for the full RentOk tenant app overhaul. Backend frozen for this phase; this repo covers concept, design language, and research — no app code lives here.
+Design, product, and research documents for the new RentOk tenant app: a fresh build, imagined from scratch, that will replace the current production app once ready. No app code lives here.
 
-## Read in this order
+**Written for everyone on this project**: leadership, product, designers, design interns, researchers, and property owners we share these with. Plain language throughout. Technical material lives in `engineering/` and `research/` for those who need it.
 
-1. **[TAR-01 Brief](TAR-01-brief.md)** — the bet, why now, personalization system, build waves, boundaries, success metrics.
-2. **[TAR-02 Design Language](TAR-02-design-language.md)** — the visual/motion/type system: laws, typeface choice, color derivation, signature moments. Naming deferred to a stakeholder conversation.
-3. **[TAR-03 Problem Hypotheses](TAR-03-problem-hypotheses.md)** — module-by-module diagnosis of the current app, every claim tagged `[PROVEN]` / `[OBSERVED]` / `[INFERRED]`. Trust-first, adoption-second ranking. This is a hypothesis set for validation, not a verdict.
-4. **[TAR-04 Research Kit](TAR-04-research-kit.md)** — the interview guides and concept-test deck (tenants, owners, internal team) that validate TAR-03 and test new-feature demand before anything gets built.
-5. **[Backend Asks Ledger](backend-asks-ledger.md)** — every additive backend request surfaced along the way, logged, none built, none blocking.
-6. **[Current App Feature Map](current-app-feature-map.md)** — full inventory of what the existing app does today, module by module.
+## Start here
 
-## `research/`
+**[TAR-00 · Vision and Requirements](TAR-00-vision-and-requirements.md)** — what we are building, why, for whom, the promises we've made, and what success looks like. Read this first; everything else hangs off it.
 
-Supporting material the docs above cite and build on:
-- **[Fintech Reference Teardown](research/fintech-reference-teardown.md)** — source-code teardown of Scapia, Kiwi, slice, Stable Money, CRED, Jupiter, Fi.
-- **[Brand Systems Synthesis](research/brand-systems-synthesis.md)** — Apple/Airbnb/Wise/Revolut/Linear/Stripe design systems, what transfers to a white-labelled Indian rental app and what doesn't.
-- **[Typeface Research](research/typeface-research.md)** — typeface selection, measured against the app's own font binaries.
-- **[Palette and Motion Research](research/palette-and-motion-research.md)** — deriving an accessible palette from one arbitrary client color; motion token specs.
-- **[Craft Layer: HIG to Flutter](research/craft-layer-hig-to-flutter.md)** — Apple HIG craft principles (Dynamic Type, iconography, touch targets, states, haptics, accessibility) mapped to the actual Flutter codebase, with file:line citations.
+## Then, in order
 
-## Status
+1. **[TAR-01 · Brief](TAR-01-brief.md)** — the product bet in detail: personalization, growth, build waves. *(Being updated to the new-build framing; TAR-00 is current where they differ.)*
+2. **[TAR-02 · Design Language](TAR-02-design-language.md)** — how it looks, moves, and speaks: the laws, the typeface, color, motion. *(Plain-language pass pending; TAR-00 is current where they differ.)*
+3. **[TAR-03 · What Each Part Must Become](TAR-03-what-each-part-must-become.md)** — module by module: the ambition, what the first draft taught us, what research must validate.
+4. **[TAR-04 · Research Kit](TAR-04-research-kit.md)** — interview guides and concept tests for tenants, owners, and the internal team.
 
-Concept and design-language phase complete, adversarially critiqued, corrected against the codebase multiple times. No pixels yet, no research sessions run yet. Full status: see the changelog at the bottom of each doc.
+## Reference
+
+- **[Current App Feature Map](current-app-feature-map.md)** — everything the existing app does today.
+- **[Backend Requirements Ledger](backend-asks-ledger.md)** — what the new service layer must provide, collected as design surfaces it.
+- **`research/`** — the studies behind the decisions: teardowns of the best Indian consumer apps, world-class design systems, typeface and color research, craft audits.
+- **`engineering/`** — for the engineering team: the current app's [known-defects register](engineering/known-defects-register.md) and the [detailed technical diagnosis](engineering/legacy-app-detailed-diagnosis.md).
+
+## Ground rules these documents follow
+
+- The current app is a first draft that taught us lessons, never a boundary. Nothing is kept out of habit.
+- Technical defects stay in the engineering register. Design documents treat correct money display, delivered receipts, and unclipped text as grammar, not achievements.
+- Claims are marked by how we know them: verified ourselves, seen in the field, or our read pending research.
+- Nothing here is final until it has survived the research in TAR-04 and stakeholder review.
