@@ -12,7 +12,9 @@ This is the app a tenant gets when their home runs on RentOk. The property is pr
 
 Three commitments shape everything below.
 
-**One app, one journey.** Renting today is scattered across separate surfaces: a marketplace website, a joining flow, a web check-in, a payment page, an app. In the new world, one app carries the complete journey, from searching for a home to leaving it, with no dependency on any other product. Each web journey continues to stand alone for people who never install the app, and the app and the web are two renderings of the same journey: whatever a tenant did on the web is simply there when they open the app. Nothing is ever entered twice.
+**One app, the whole journey, natively.** Renting today is scattered across separate surfaces: a marketplace website, a joining flow, a web check-in, a payment page, an app. The new app carries the complete journey by itself: finding a home, visiting it, booking it, verifying identity, reviewing terms, signing the agreement, setting up payments, recording the room's condition, living there, and leaving. Nothing in it waits on another product. The web journeys keep running for people who have not installed the app, and anyone who used them simply arrives further along, but the app is written first and the web is the alternative entrance, never the assumed one.
+
+**The app knows where you are in the journey.** A person can install it while still looking for a home, the day they book one, the morning they move in, or years into a tenancy, and it meets them correctly each time: looking, booked, living here, moved on. Same app, different stage. This is also why the doors connect so naturally: the open door is this same app serving the stages where no property is involved yet, or any more.
 
 **Doors connect without a break.** A renter in the open-for-all door who books a RentOk property walks straight into this door with their profile, documents, and history intact. A tenant here who moves to a property on a branded app walks into that brand's door the same way. A tenant leaving RentOk properties altogether carries their record into the open door. Every transition in, out, and between doors is one continuous experience. The single deliberate exception is listed in open decisions.
 
@@ -30,11 +32,11 @@ The owner hands the app to the tenant at move-in, and the welcome decides whethe
 
 ## A tenant's life, moment by moment
 
-### 1. Before day one
+### 1. Finding a home and joining it
 
-The relationship starts before move-in day, often before the app is installed, on a phone browser.
+Everything here happens inside the app for someone who installed it first, and on the web for someone who has not. The steps, the data, and the standard of care are identical either way.
 
-**Finding this home.** A renter reaches a property through the brand's own website, through RentOk's marketplace, through the open door's search, or because an owner shared a link. However they arrive, the journey from interest to key is one flow:
+**Finding this home.** A renter reaches a property through the app's own search, through the brand's website, through RentOk's marketplace, or because an owner shared a link. However they arrive, the journey from interest to key is one flow:
 
 - **Who are you.** A light persona step early on, so the journey speaks to a student, a professional, a family, or a group correctly from the first screen. This is also the moment the renter's record begins, before any tenancy exists.
 - **See the place.** Listing, rooms, sharing options, rent and terms, photos and video, location and commute. Honest and complete.
@@ -42,16 +44,16 @@ The relationship starts before move-in day, often before the app is installed, o
 - **Reserve.** A token amount holds the room. The receipt is immediate and the terms of the token are stated in plain words before paying, including exactly what happens if plans change.
 - **The joining profile.** Name, details, documents, uploaded once into the renter's own account. A booking can also be modified: change the room, shift the move-in date, or cancel, each with its consequences stated up front.
 
-**Web check-in: arrive with the paperwork already done.** Between booking and move-in day, the tenant completes check-in from any browser:
+**Joining: everything settled before the keys.** Between booking and move-in day, in the app or on the web, the tenant completes:
 
 1. Identity verification through eKYC.
 2. Profile completion.
 3. The renting terms, reviewed in plain words: rent, deposit, notice period, lock-in, house rules, and the property's deposit deduction rules. The deduction rules are shown here, on day minus-three, not discovered at move-out. This single choice kills India's worst renting dispute at its root: there are no surprise rules at the exit because every rule was visible at the entrance.
-4. The agreement, previewed and signed. Every person named in it signs their own part (see The shared tenancy below).
+4. The agreement, previewed and signed. Every person named in it signs their own part (see The people on your agreement below).
 5. Autopay setup, where the property offers it.
 6. The move-in checklist, begun before arrival where the property prefers it.
 
-The property controls the order and which steps are required. Steps that are not legally required at that moment can be finished later; the app states the consequence of skipping plainly and never bluffs. A tenant who does none of this online is caught by the same steps in the app on day one, with the manager able to assist.
+The property decides the order and which steps are required. Steps not legally required at that moment can be finished later; the app states the consequence of skipping plainly and never bluffs. A tenant who arrives having done none of it meets the same steps in the app on day one, with the manager able to help. A tenant who did it all arrives to a welcome with nothing left to fill.
 
 **Groups.** Where a group of friends joins a property together, the group applies together: one home, several people, one shared application, each person with their own entry. Group search across many properties at once belongs to the branded and open doors; here, a group that has chosen this property joins it as a group.
 
@@ -61,7 +63,7 @@ The property controls the order and which steps are required. Steps that are not
 
 **The handover is part of the product.** The owner or manager hands the tenant the app through a designed artifact: a join code or poster in the property's own identity, presented at move-in. The manager sees who joined. For a tenant who checked in on the web, this is a ten-second step.
 
-**The first open is a welcome, not a form.** The property's own name and logo lead. Everything done before day one is already there. What remains is warm, guided, skippable where the law allows, and clear about why each permission is asked. The first minutes decide adoption, so nothing stands in front of the welcome: no walls, no forced setup, no dead ends.
+**The first open is a welcome, not a form.** The property's own name and logo lead. Whatever was finished earlier is simply there, and whatever is left is offered warmly, guided, skippable where the law allows, and clear about why each thing is asked. The first minutes decide adoption, so nothing stands in front of the welcome: no walls, no forced setup, no dead ends.
 
 **The move-in record.** On day one the tenant walks their room with the camera: a short video, items confirmed against what the property says is in the room, condition noted, both sides sign. It is framed as what it is, the tenant's protection: these timestamped images are what make an unfair deduction impossible, and they are half of the deposit journey that ends on the last day.
 
@@ -73,13 +75,19 @@ The property controls the order and which steps are required. Steps that are not
 
 ### 3. Every day
 
-**The home screen answers one glance:** is anything wrong, and what is next. A thin live strip carries what is happening right now: the meal being served, the gate closing soon, a poll ending tonight. Below it, sections chosen and ordered for this tenant: a student's evening is food and the gate, a professional's month is rent and receipts, a sponsored tenant sees their home and never a due that is not theirs to pay. The composition comes from who the tenant is, where they live, what the property is, and what the property has switched on.
+**The home screen answers one glance:** is anything wrong, and what is next. A thin live strip carries what is happening right now: the meal being served, the gate closing soon, a poll ending tonight. Below it, sections chosen and ordered for this tenant: a student's evening is food and the gate, a professional's month is rent and receipts, a sponsored tenant sees their home and never a due that is not theirs to pay. What appears, and in what order, comes from who the tenant is, where they live, what the property is, and what the property has switched on.
 
 **Food.** The most checked screen of the day where a mess exists. Tonight's menu presented with appetite and honest timing. Confirming meals framed as choosing dinner, never as reporting attendance, with the communal count that makes a mess feel like a shared table. Tenants who want to plan can pre-select their meals for the week ahead, which gives the kitchen true numbers days early and gives the tenant a week that holds no menu surprises. A live-meal moment with a QR plate check-in. Where the property runs a cafe or canteen, ordering and paying live in the same place. Ratings that visibly reach the kitchen, and a kitchen that visibly answers. And the vote: menu polls that let residents shape next week's menu, the single feature where community and food feed each other daily.
 
-**Presence, told as one story.** Attendance and entry-exit are one experience for the tenant: show up, get seen. Marking returns a human acknowledgment, not a log entry. History fills a calendar that feels like a streak, kept with quiet pride, broken with mercy, mended within reason. Setup is warm, guided, and clear about why each permission is asked.
+**Presence: one system for everyone in the building.** Who is here, and does the building know. Residents marking their day, the gate recording comings and goings, a visitor arriving, a friend staying the night, a parcel waiting at reception: these are the same question, and they are designed as one system rather than several that happen to sit together. Each part is complete on its own, so a property that runs only daily marking gets something whole and finished, and a property that runs everything gets one coherent picture of its building instead of four disconnected logs. Where both resident marking and gate records run, the tenant sees one day, not two features.
 
-**Where the property installs smart locks, the door itself joins the app**: the tap that unlocks the door is the same tap that logs presence, so convenience leads and the logging is disclosed plainly as its companion. Where the property runs QR or biometric entry, presence rides that infrastructure instead of asking the tenant twice. The management side of all this is real and stated without apology: accurate presence gives a warden true absentee alerts, gives the kitchen true meal counts, and gives the building a live who-is-inside list the day there is a fire. The app's promise is that enforcement never requires shame: the property gets accuracy, the tenant keeps dignity, and both are design requirements.
+For the tenant, the promise is simple: show up, get seen. Marking returns a human acknowledgment, not a log entry. History fills a calendar that feels like a streak, kept with quiet pride, broken with mercy, mended within reason. Setup is warm, guided, and clear about why each permission is asked.
+
+**Guests, visitors, and deliveries live in the same system**, because they are the same question asked about someone else. A tenant pre-approves a visitor so their friend is expected at the gate rather than interrogated. A regular guest, the partner who visits every weekend, the cousin who comes monthly, is remembered instead of re-explained each time. An overnight stay is requested where the property requires it and priced in advance where the property charges for it, so nobody is surprised by a line on a bill. Parcels announce themselves when they arrive and stop being a phone call to the guard. In flats and family homes, the same system quietly serves the household's own people: the cook, the maid, the tutor, arriving and leaving with a notification, their monthly attendance ready when it is time to settle up.
+
+The building-wide value follows for free: an accurate list of who is inside right now, residents and guests together, on the day a fire alarm rings.
+
+**Where the property installs smart locks, the door itself joins the app**: the tap that unlocks the door is the same tap that records presence, so convenience leads and the recording is disclosed plainly as its companion. Where the property already runs a QR or fingerprint gate, presence uses that instead of asking the tenant twice. The app speaks in terms of what a device can do rather than which company made it, so a second lock partner or a second meter partner slots in without redesigning anything. The management side of all this is real and stated without apology: accurate presence gives a warden true absentee alerts, gives the kitchen true meal counts, and gives the building a live who-is-inside list the day there is a fire. The app's promise is that enforcement never requires shame: the property gets accuracy, the tenant keeps dignity, and both are design requirements.
 
 The tenant's side of the watching features is the tenant's own record: their presence history, their gate passes, their late-entry request (with the option to inform family), their multi-day leave or outpass request where the property uses one (with guardian approval where the tenant is a minor), their guest and visitor pre-approvals, and the property's curfew rules stated plainly. The transparency rule from [TAR-05](TAR-05-how-features-earn-their-place.md) binds here hardest: the tenant sees exactly what the property sees, always. Where the property archetype changes, the meaning changes with it: in a senior residence or an institute hostel, presence read by a linked family member is not surveillance, it is the point (see The Family Window).
 
@@ -87,31 +95,37 @@ Every feature in this section is a burden feature by TAR-05's definition, and ev
 
 **The directory: the building's people, organized by need.** Not an organization chart. Something broke: who fixes it. Late at night: the warden. Money: the manager, the owner. A parcel: reception. My home: my roommates and flatmates (opt-in, names first, more by mutual consent), my co-tenants and dependents, the property team with their roles, the owner's details. In hostels, the safety layer the law expects lives here in plain sight: the anti-ragging helpline and emergency contacts. Calls and messages route through the app, so staff personal numbers stay private, which protects the staff as much as the tenants.
 
-**Parcels and people at the gate.** Where a property has a reception or a gate, the tenant knows without asking: your parcel arrived at three, your visitor is waiting, your pre-approved guest walked in. In flats and family homes, the same layer serves the household's own people: the cook, the maid, the tutor, each arriving and leaving with a quiet notification, their monthly attendance visible when it is time to settle up, and trusted household staff findable through the local layer where neighbors have vouched for them.
+Trusted household help is also findable here, where neighbors in the same building have vouched for them.
 
 ### 4. Every month
 
-**The money surface is the most trusted screen in the tenant's phone.** One clear answer: what do I owe, is it paid, can I prove it.
+**The money surface is the most trusted screen in the tenant's phone**, and it answers three questions, not one: what happened, what stands right now, and what is coming.
 
-- **Dues, itemized by name.** Rent, food, maintenance, laundry, electricity, whatever this property charges, each a named component, never one grey number. In a shared home, each person sees their own share and the whole picture.
-- **The calendar matches the property.** A working PG bills monthly. A college hostel bills by semester or year, often in installments. A serviced stay bills by the week or the day. Billing periodicity is a first-class idea in the money system, with pro-ration handled honestly whenever a stay, a plan, or a room changes mid-cycle.
-- **Money with your property, always visible.** Advance money and caution money appear as living balances with their full story: created by this payment, adjusted against that due, refunded on this date. It feels like a wallet and behaves like a ledger: the app is the tenant's clear window into money the property holds, and every touch to it leaves a visible trail. The deposit carries the same trail, from first payment through every adjustment to the final refund.
-- **Every refund has a journey.** A deposit, an advance, an overpayment, a cancelled booking: whatever comes back travels with visible status and dates until it lands, and a cash refund is recorded with the same dignity as a transfer.
+**What stands right now.** What you owe, what you hold with the property, and what you have earned.
+
+- **What you owe, itemized by name, in the shapes money actually takes.** Fixed charges that repeat: rent and the packages this property bills, food, maintenance, laundry. Charges that follow use rather than the calendar: a prepaid electricity meter recharged when it runs low, a metered utility read at month end. And one-off charges: a service booked, a dish ordered from the menu, a guest who stayed the weekend, something broken and owned up to. Each is a named line with its own story, never one grey number, and in a shared home each person sees their own share alongside the whole picture.
+- **The calendar matches the property.** A working PG bills monthly. A college hostel bills by semester or year, often in installments. A serviced stay bills by the week or the day. Usage charges follow no calendar at all. All of it is normal to the money system, with pro-ration handled honestly whenever a stay, a plan, or a room changes mid-cycle.
+- **Money you hold with the property, always visible.** The deposit, advance money, and caution money each appear as a living balance with its full story: paid on this date, adjusted against that charge, this much remaining, refunded then. It feels like a wallet and behaves like a ledger: a clear window onto money the property holds for you, where every movement leaves a visible trail and nothing is ever quietly consumed.
+- **Money you have earned, with its expiry in plain sight.** Discounts the owner gave, credits from a referral or a goodwill gesture, cashback from a payment: each shows where it came from, what it can be used on, what it has already been used on, and the date it stops being worth anything. A benefit that expires unnoticed is a benefit that was never really given.
+- **Every refund has a journey.** A deposit, an advance, an overpayment, a cancelled booking: whatever comes back carries the property's own promised timeline, which may be a week or two months, and a visible countdown against it until the money lands. A cash refund is recorded with the same dignity as a transfer.
 - **Paying.** Every rail the tenant actually uses: UPI apps, cards including rent on a credit card, netbanking, autopay, and cash. Cash is handed over against an OTP or the property's payment QR and earns the identical receipt, the identical record entry, and the identical streak credit as any digital payment. Paying in cash is a payment, not a confession.
 - **Autopay, native.** Its state, next date, and amount visible in the app, changeable and pausable without hunting through an external portal.
 - **The receipt is a document worth keeping.** Tax-ready, address-proof-ready, beautiful enough to send, generated for every payment including cash, and per person in a shared home so each flatmate holds their own housing-rent proof. Beside it, where billing requires one, a GST-compliant invoice: the invoice bills, the receipt proves, and both are per person.
-- **Bills, in the same place.** Electricity, wifi, DTH, recharges: the household's other payments live beside the rent, which gives every register, including the family in a flat, a reason to open the app more than once a month. Prepaid meters get the full treatment: balance visible, a warning before it runs out, recharge in a tap, and usage history; postpaid meters show their readings inside the month's components.
+- **Bills, in the same place.** Electricity, wifi, DTH, recharges: the household's other payments live beside the rent, which gives every register, including the family in a flat, a reason to open the app more than once a month.
 - **Rent day is a moment, not a deadline.** Paying on time is acknowledged the day it happens, and the first of the month carries small member moments: a benefit, an experience, a thank-you that makes the month's biggest payment feel seen. Celebration follows the standing promise: designed, dignified, and never a slot machine.
-- **The month's money, understood.** Every payment made through the app captures itself into a simple expense picture: what this month cost, split by home, bills, and life, with manual entries and the split ledger folded in. A budget for those who want one, silence for those who do not.
+**What happened.** Every payment, in one running statement: the receipt for each, the invoice where billing needs one, the month's ledger, and a year's view when tax season asks for it. Nothing is ever re-requested from a person who already paid.
+
+**What is coming.** The app already knows a tenant's rent date, their package charges, how much electricity they usually use, and the services they have booked. So it can say what next month will probably cost before it arrives, and warn when the picture is about to get uncomfortable. Everything paid through the app records itself into that picture automatically, with room for cash spending entered by hand and shared expenses from the flat ledger folded in. Budgets are built from real repeating charges rather than typed in from scratch: money planning for people who have never planned money, and quiet for those who would rather not. This is the same money system looking forward instead of back, which is why it needs no separate app and no separate discipline.
 - **The streak grows.** Months paid on time accumulate visibly into the tenant's record. Reminders are written as a helpful friend who assumes you intend to pay, never as a collection agency.
 - **The deposit is never invisible.** Where it sits, what rules govern it (known since before day one), and what will happen to it at the end.
-- **Offers that respect where you live.** Scoped by city, property, register, and age. Where nothing relevant is live, the section shrinks gracefully instead of showing everyone the same national catalog. Below 18, only a curated, age-appropriate set, with all profiling off: that is the law and our standard.
+- **Electricity, handled with care.** Where a property runs prepaid meters, the tenant sees their balance and what they are using, gets warned early enough to act, and recharges in a tap. Nobody is left in a dark room at eleven at night by an automatic cut: a warning comes first, a grace period follows, and an emergency top-up is always available. Where meters are read monthly instead, the reading and its charge appear as a named line in the month.
+- **Offers that respect who and where you are.** Chosen by city, property, kind of tenant, and age. Where nothing relevant is live, the section shrinks gracefully instead of showing everyone the same national catalog. Below 18, only a curated, age-appropriate set, with all profiling off: that is the law and our standard. Gender may decide an offer only where it genuinely decides relevance, a women's safety service, a women's hostel's own partners, and never where it only decides taste, because the line between useful and insulting is exactly the line TAR-00 drew.
 
 A tenant with more than one RentOk tenancy switches between them in one place.
 
 ### 5. When something needs attention
 
-**Complaints are chat-first.** The tenant describes the problem the way they would tell a friend, by tapping a chip or typing a sentence, and the app takes it from there. The confirmation names a human and sets an honest expectation. Progress is visible without asking. The escalation ladder is visible too: who has it now, what happens if it stalls, and the one-tap escalation when it does. A form remains as the fallback, never the front door. History is honest: a reopened problem carries its past, and a tenant burned before is answered with visible action, because trust here decays fast and is rebuilt only by outcomes.
+**Complaints are chat-first to file, and a plain list to follow.** The tenant describes the problem the way they would tell a friend, by tapping a chip or typing a sentence, and the app takes it from there. The confirmation names a human and sets an honest expectation. Alongside the conversation sits the ordinary view every tenant expects: all my complaints, open and closed, with status, who holds each one, and how long it has been there, searchable and filterable. Chat is the fastest way in; the list is how people keep track, and neither hides behind the other. The escalation path is visible too: who has it now, what happens if it stalls, and the one tap that raises it when it does. History is honest: a reopened problem carries its past, and a tenant burned before is answered with visible action, because trust here decays fast and is rebuilt only by outcomes.
 
 **The shared complaint.** Building-level problems, water, wifi, the lift, become one collective issue that neighbors join instead of fifteen duplicate tickets and fifteen separate silences. Everyone who joined sees the same status, and the fix is announced once to everyone. Filing stays private by default; joining a shared issue is the social act.
 
@@ -123,9 +137,9 @@ A tenant with more than one RentOk tenancy switches between them in one place.
 
 **The notice board is the property's front page.** Pinned, categorized notices with an archive that never lies about newness: a signal that fakes being new teaches everyone to ignore it. Institute and college properties get the full version: circulars, schedules, exam-season notices, the sheets a warden tapes to the wall today, dated and findable forever. Critical notices, a water cut, a safety instruction, carry an acknowledgment so the property knows who has seen them; ordinary notices carry no read receipts, because a notice board is not a watching feature. The tenant sees their own acknowledgment history.
 
-**Messages is the conversation, not a feed.** The property and the tenant already talk on the property's WhatsApp line, and that whole conversation, both voices, lives inside the app as one readable thread: every reminder the property sent, every reply the tenant gave, every notice, in order, forever findable. The tenant can answer from inside the app and the reply reaches the manager exactly where they already work. Nothing said between a tenant and their property ever gets lost in a phone's chat history again, and no other app shows a tenant this conversation at all. The property's existing channels keep working; the app is where the relationship's memory lives.
+**Messaging inside the app is the real conversation.** A tenant and their property team can talk directly in the app: a question about a bill, a request, a photo of a leaking tap, an answer from a named person. WhatsApp keeps doing what it is good at, reaching people who have not opened the app, and the app keeps the record of everything sent to the tenant on any channel. But the conversation itself is native, which means it is searchable, it links to the thing being discussed, it survives a lost phone, and it never competes with the tenant's personal chats for attention. The manager keeps one inbox for their side; the tenant gets a conversation that belongs to their home rather than to a chat app.
 
-**The property listens back.** Quick pulse surveys and ratings at the right moments, inside the app, with visible consequences: you said the water pressure was bad, it was fixed on Tuesday. Feedback that visibly lands is the only kind people keep giving. Where acting on it is not possible, the reason is said. Every answer reaches a person, and the tenant can tell.
+**Feedback and complaints are one continuous thing.** The property asks: quick surveys and ratings at the right moments. The tenant can also start it themselves, choosing what it is about, food, cleanliness, staff, safety, the building, without waiting to be asked. Management answers where an answer is owed, and the tenant sees the reply, sees it closed, and can reopen it if the answer did not hold. And the moment feedback turns out to be a real problem, it becomes a complaint carrying its whole history, so nobody retypes anything and nothing restarts at zero. Opinion becomes issue becomes fix becomes rating, in one unbroken trail. Feedback that visibly lands is the only kind people keep giving; where acting is not possible, the reason is said plainly.
 
 ### 6. When your needs change
 
@@ -136,11 +150,13 @@ Life changes mid-tenancy, and every change has a clean workflow instead of a neg
 - **Go away for a while.** Multi-day leave in hostels carries its whole story: the outpass, guardian approval where required, the gate and the kitchen informed, the food component adjusted for the days away, and the room held. Term closures in institute properties follow the academic calendar the app already knows: vacation holds, luggage storage, the return date.
 - **Stay longer.** Extensions by days, weeks, or a full term, with rates and pro-ration stated before agreeing. In serviced stays this is the everyday case, not the exception.
 - **Host for longer.** A guest staying the weekend or joining meals becomes a clean, priced item on the month's components, agreed in advance, instead of a warden's mental note.
-- **Move within the system.** The transfer to a sister property (described in the leaving fork) starts here too, because a transfer is a need changing, not a goodbye.
+- **Move within the system.** The transfer to a sister property (described in the last section) starts here too, because a transfer is a need changing, not a goodbye.
 
-### 7. Living together
+### 7. The people around you
 
-The floor is the app's unfair advantage: the one thing no messaging app can promise is that everyone in the room actually lives in your building.
+Two different groups of people share a tenant's life, and the app keeps them clearly apart. **The people on your agreement**, co-tenants and dependents, share your money and your obligations; they have their own section below. **The people in your building**, floormates and neighbours, share your walls but not your rent. This moment is about the second group.
+
+The building is the app's unfair advantage: the one thing no messaging app can promise is that everyone in the room actually lives here.
 
 - **Community** is the residents' voice, not the property's megaphone. The property speaks in Messages; this space belongs to the tenants. Every member is a verified resident, which is the entire safety model: no strangers, no spam. Lost and found, borrow a ladder, selling a cycle, planning a Sunday. Report and block are built in; the manager is a moderator of last resort; the property can switch the space on or off. It defaults on in PGs, co-livings, hostels, and senior residences, and off in family flats.
 - **Polls**, two kinds: property polls (the menu vote, an amenity decision) and resident polls (movie night, the AC temperature). Opt-in and light.
@@ -149,7 +165,9 @@ The floor is the app's unfair advantage: the one thing no messaging app can prom
 - **Chores**, as shared rotation lists for groups and shared rooms. Personal to-do lists belong to the tenant alone; the app never generates tasks onto them.
 - **Events.** Property-hosted and resident-created with approval: the Diwali dinner, the movie night, the society meet. In senior residences, an events calendar the linked family can see.
 
-Everything here is multiplayer by nature, which makes it the cheapest growth the app has: a tenant pulls their floormates in because the thing does not work alone.
+Everything here works better with others, which makes it the cheapest growth the app has: a tenant pulls their floormates in because the thing does not work alone.
+
+**How much of this exists depends entirely on the home.** In a hostel or a PG, the building is the social life and this section is busy. In a co-living, the community is half of what the resident paid for, and events and amenities lead. In a bachelor flat, the group on the agreement matters far more than the neighbours. In a family flat, most of this is off and what remains is practical: the society's notices, the help at the gate, the neighbour who recommends a plumber. In senior living, the calendar of events is the heart of it, and it is visible to family too. The property decides which parts exist, and the app never insists on community where a family simply wants a quiet home.
 
 ### 8. The record that grows
 
@@ -171,7 +189,7 @@ Everything here is multiplayer by nature, which makes it the cheapest growth the
 
 ### 9. When the agreement ends
 
-This moment is a fork, not a farewell, and the app presents staying first.
+This moment holds two possible paths, and the app presents staying first.
 
 **The renewal path.** As the end date approaches, the tenant sees it calmly: your agreement ends 30 September. Renewing is one or two taps: the same terms with any agreed escalation shown plainly, both sides review, both sides sign, done. Rate changes are shown as numbers, not surprises. The app helps the tenant act on their own document and never, in any words, suggests leaving. Renewal is the app doing its quiet best work: a yearly moment of dread turned into a two-minute task.
 
@@ -191,7 +209,7 @@ This moment is a fork, not a farewell, and the app presents staying first.
 
 ## The Family Window
 
-Some of the most important people in a tenancy never live in the room: the parent paying a student's rent, the company paying a sponsored tenant's, the adult children of a resident in a senior home. The Family Window is one system for all of them: a linked account with its own login, a scoped view, and payment rails.
+Some of the most important people in a tenancy never live in the room: the parent paying a student's rent, the company paying a sponsored tenant's, the adult children of a resident in a senior home. The Family Window is one system for all of them: a linked account with its own login, a view limited to what the family should see, and a way to pay.
 
 **One concept, four relationships.**
 
@@ -210,15 +228,19 @@ In the senior and minor cases the window is not an add-on but part of what the p
 
 **The window's rhythm is a digest, not a feed.** The default experience for a linked family member is a weekly summary: paid on time, present all week, attended the Sunday event, all well. A digest respects the tenant's autonomy more than a live feed ever can, and families report it as more valuable, not less: the point is peace of mind, not monitoring. Live views exist only where the relationship and the configuration allow them. In senior residences the digest carries the texture families actually want: activities joined, meals taken, photos from the week. In hostels with minors, the outpass and leave approvals arrive as their own moments, because those are decisions, not news. An opt-in emergency health card, blood group, allergies, emergency contact, travels with the tenant's profile for the day it is needed.
 
-**What the window shows is a property decision with our suggested defaults.** Whether a linked parent sees dues only, or presence, or complaints, or community, is configured by the property in the manager app's switchboard. We ship suggested defaults per relationship: for a minor, guardianship-appropriate visibility; for an adult tenant, money and documents only until the tenant consents to more; for a senior residence, the wellbeing signal, is my parent okay today, visits, and payments, with the resident's autonomy governing the rest. In every configuration, two lines hold: below 18, profiling is off and content is curated, because that is the law; and the window is never a surveillance tool, because what it may show is always visible to the tenant themselves.
+**What the window shows is a property decision with our suggested defaults.** Whether a linked parent sees dues only, or presence, or complaints, or community, is set by the property in the manager app. We ship suggested defaults per relationship: for a minor, guardianship-appropriate visibility; for an adult tenant, money and documents only until the tenant consents to more; for a senior residence, the wellbeing signal, is my parent okay today, visits, and payments, with the resident's autonomy governing the rest. In every configuration, two lines hold: below 18, profiling is off and content is curated, because that is the law; and the window is never a surveillance tool, because what it may show is always visible to the tenant themselves.
 
-**The payer rails.** Whoever pays through the window, parent or company, gets the payment experience, the receipts, and the platform-fee billing routed to them, without ever taking the tenancy's ownership away from the person who lives there.
+**Paying from the window.** Whoever pays, a parent or a company, gets the payment experience, the receipts, and the membership billing sent to them, without ever taking the tenancy away from the person who lives there.
+
+**The window works in both directions.** A tenant can nudge upward as easily as a family can look in: remind a parent that this month's rent is due, that their identity check is still pending, that the agreement is waiting for their signature, and then see whether it was done. Students spend real emotional energy chasing their own parents through phone calls; this turns it into one tap and an honest status. The same works for a company payer, where an unpaid invoice is nobody's fault and everybody's problem.
 
 ---
 
-## The shared tenancy
+## The people on your agreement
 
 Homes are shared by flatmates, couples, families, and groups of friends, and the app treats the group as what it is: several full people in one tenancy, never one name and some ghosts. This is not a feature; it is a thread that runs through every moment above, and it deserves to be told the way it is lived.
+
+**Everyone on the agreement is a full user of the app.** A co-tenant, a spouse, a parent living with their son, a child old enough to have a phone: each has their own login and their own app, not a viewing window into somebody else's. They raise complaints about the leaking tap in their own bathroom, book a service, reserve the amenity, read the notices, keep their own expenses and their own budget, join the building's life. Sharing a tenancy has never meant sharing an identity, and paying the rent is the least interesting thing a person does in their own home.
 
 **Arriving as a group.** Three friends choose a flat together. They apply together: one home, one application, each person their own entry. The manager creates the agreement with all the core tenants and every agreement party on it: co-tenants, a guarantor, a guardian where someone is a minor. Each named person gets their own claim: they log in with their own phone, find their entry waiting, verify their own identity, and sign their own part. Nobody signs for somebody else. Dependents follow a request path: a tenant fills in a dependent's details, and the core tenants and the manager approve from their own sides before the dependent joins the tenancy.
 
@@ -234,25 +256,25 @@ Homes are shared by flatmates, couples, families, and groups of friends, and the
 
 ---
 
-## The switchboard
+## Customization: every property shapes its own app
 
-Every property composes its tenant app. One system governs what exists in this property's app: each module, feature, and service is a switch the property sets from the manager app, within bounds RentOk defines.
+One system decides what exists in a given property's app. Each feature and service is a switch the property sets from the manager app, within limits RentOk defines.
 
 - **The trust floor never switches off.** Money, documents and the agreement, complaints, and the tenant's own profile exist in every property's app, always. An app whose landlord can hide your receipts is not a trustworthy app, and we do not sell one.
-- **Everything else is a property choice.** Community, polls, services, events, food, attendance, entry-exit, the Family Window, the renting-life shelf: on, off, or scoped, per property.
+- **Everything else is a property choice.** Community, polls, services, events, food, attendance, entry-exit, the Family Window, help with renting: on, off, or limited, per property.
 - **Watching features bring their transparency with them.** If a property switches on attendance or entry-exit, the tenant's mirror of that data comes with it, not as an option but as part of the feature. There is no configuration in which the property watches and the tenant cannot see.
-- **Composition is also personalization.** What a property switches on tells the app what kind of home this is, and the app's tone and ordering follow.
-- **The switchboard is the white-label composer.** The branded door is this same system with the brand's voice and bounds.
-- **Premium properties compose a concierge.** A luxury co-living can switch on a named resident-manager presence: a real person with a face, reachable in a tap, with a stated response promise. The best premium operators built their reputation on exactly this, and the branded door must let a brand express it, not just repaint buttons.
-- **Institutional properties compose deeper.** A college or institute property configures what its life actually requires: the academic calendar with its term billing and closures, outpass rules and guardian approvals, mess schedules, the notice board's institutional shape. The pitch to these operators is the honest one: the app gives management real enforcement, true attendance, true meal counts, a live who-is-inside list for the day it matters, precisely because tenants experience dignity instead of policing. Compliance rises when the asking is fair. That sentence is this app's institutional sales pitch, and every feature above was designed to make it true.
+- **What a property switches on is itself a signal.** What it turns on tells the app what kind of home this is, and the app's tone and ordering follow.
+- **This same system builds the branded app.** The branded door is this system again, with the brand's voice and its own limits.
+- **Premium properties can add a concierge.** A luxury co-living can switch on a named resident-manager presence: a real person with a face, reachable in a tap, with a stated response promise. The best premium operators built their reputation on exactly this, and the branded door must let a brand express it, not just repaint buttons.
+- **Institutional properties customize deeper.** A college or institute property configures what its life actually requires: the academic calendar with its term billing and closures, outpass rules and guardian approvals, mess schedules, the notice board's institutional shape. The pitch to these operators is the honest one: the app gives management real enforcement, true attendance, true meal counts, a live who-is-inside list for the day it matters, precisely because tenants experience dignity instead of policing. Compliance rises when the asking is fair. That sentence is this app's institutional sales pitch, and every feature above was designed to make it true.
 
-## The renting-life shelf
+## Help with renting
 
 Beyond what the property provides, RentOk brings services any tenant needs because they rent: tax and accounting help for housing-rent claims, insurance, credit-score building on rent history, movers and packers, a doctor on call, couriers, legal help for the paperwork of renting. Legal help here means the agreement explained and general legal services; tooling for disputes against one's own landlord belongs to the open door, not to the app the landlord distributes.
 
-- **Three layers, each labeled by who provides it.** Property services (bookable, from your property, including its own shared amenities: the gym slot, the theatre room, the coworking desk). The local layer: vendors partnered per city and per property, the tiffin service, the laundry, the gym nearby, the broadband deal, vetted, geo-scoped, shrinking gracefully to nothing where no partner exists. And the renting-life shelf from the RentOk ecosystem. Never mixed, never an ad shelf.
-- **The moment does the introducing.** Movers appear in the leaving fork and the arriving moment. Tax help appears at receipt-download season. Insurance appears at move-in. The shelf exists for deliberate browsing; the workflow offers the tool exactly where its value just became real, once, and lets it be ignored for free.
-- **The property has a say.** Shelf categories carry sensible defaults set by RentOk and adjustable by the property within bounds.
+- **Three layers, each labeled by who provides it.** Property services (bookable, from your property, including its own shared amenities: the gym slot, the theatre room, the coworking desk). The local layer: vendors partnered per city and per property, the tiffin service, the laundry, the gym nearby, the broadband deal, vetted, geo-scoped, shrinking gracefully to nothing where no partner exists. And help with renting from the RentOk ecosystem. Never mixed together, and never an advertising space.
+- **The moment does the introducing.** Movers appear when someone is leaving or arriving. Tax help appears when receipts are being downloaded in tax season. Insurance appears at move-in. A tenant can always browse the full list on purpose, but help is offered where the need has just appeared, once, and is free to ignore.
+- **The property has a say.** Service categories carry sensible defaults set by RentOk and adjustable by the property within bounds.
 - **Browsing other properties does not live inside this door.** A tenant's discovery of their next home belongs to the open door, reached by their own deliberate act; the sanctioned in-system move is the transfer flow. Nothing about a tenant's private browsing anywhere is ever reported to their landlord.
 
 ---
@@ -263,9 +285,9 @@ Beyond what the property provides, RentOk brings services any tenant needs becau
 
 - **One flat fee, then zero charges forever.** The fee absorbs payment processing costs on everything: rent, deposits, bills. A tenant never sees a convenience fee, a surcharge, or a per-payment cut. One number a month buys the promise that no other number ever appears.
 - **The bundle makes the fee self-evident.** Zero payment charges. The bills hub. The yearly housing-rent tax pack. Rent building a credit story. Member-scoped offers. Any one of these used once a month outweighs the fee.
-- **The fee follows the rails.** It bills tenants who transact through the app. A cash-first tenant who only records payments is not charged for rails they never use, and their record grows with full equality regardless.
+- **The fee applies to tenants who pay through the app.** A tenant who pays in cash and only records it here is not charged for a payment service they never used, and their record grows with full equality regardless.
 - **The fee never gates the trust floor.** Receipts, the record, complaints, and documents are free for every tenant forever. A record you must rent back is not yours, and the record's whole promise is that it is the tenant's own.
-- **Sponsored tenants' fees ride the company's bill** through the Family Window's payer rails, as do a linked parent's payments where the family chooses.
+- **A sponsored tenant's fee goes on the company's bill** through the Family Window, as do a linked parent's payments where the family chooses.
 
 **Rent Day belongs to members.** The first of the month, the day the biggest payment happens, carries the membership's visible moments: a benefit, a partner experience, occasionally something memorable. The month's heaviest obligation becomes the membership's proudest day, within the standing rule: designed and dignified, never a slot machine.
 
@@ -282,7 +304,7 @@ And one commercial truth shapes everything: this app is part of what the propert
 ## The mechanics that run through everything
 
 - **It must never feel like work.** Required asks are honest, visibly traded (the exchange rule in TAR-05), and never nag twice. Everything optional follows the open door's rule in full: the app notices, the tenant decides, ignoring is always free, and the app never generates pending tasks; a to-do list contains only what the tenant put there.
-- **The two channel rules.** The app speaks to two sides of one tenancy. Each side hears what serves them, never a pitch dressed as a notification. And the facts of the tenancy are shared ground while the tenant's private activity in the app is theirs alone: never reported, never summarized, never sold to the other side.
+- **The channel rules.** The app already speaks to two sides of a tenancy, and it will soon speak to more: a family member with their own app, a landlord with theirs, a broker with theirs. The rules are written to hold at any number of parties. Each party hears what serves them, never a pitch dressed as a notification. The facts of the tenancy are shared ground. And each person's private activity in the app is theirs alone: never reported, never summarized, never handed to another party.
 - **The app never suggests leaving.** Renewal, browsing, transfers: every surface near the landlord relationship helps the tenant act on their own decisions and plants none. The open door is reached by the tenant's own hand only.
 - **The record is portable across all doors.** A tenant's record and passport belong to the tenant. Leaving a branded property with your record intact is a platform guarantee, not a courtesy.
 - **Every artifact carries the name.** Receipts, records, reports: designed, branded by the property where white-labeled, and worth showing to someone.
@@ -292,6 +314,22 @@ And one commercial truth shapes everything: this app is part of what the propert
 - **Deletion is honest.** A tenant who deletes their account takes their one-sided data with them. Signed bilateral artifacts, agreements, receipts, survive for the other party, as the law and fairness require.
 
 ---
+
+## How this reads in different homes
+
+The same app, honestly different depending on where someone lives. This table is the check every design decision runs against.
+
+| Home | What leads | What is quiet or absent |
+|---|---|---|
+| **A bed in a PG** | Food, daily presence, the gate, the floor's community, monthly rent | No shared agreement money; roommates are neighbours, not co-tenants |
+| **A room in a hostel or institute property** | The academic calendar, term fees, outpass and leave, mess, the notice board, the guardian's window | Community stays supervised; no household services |
+| **A room in a co-living** | Events and amenities, concierge care, curated community, services, monthly rent | Shared money is rare; family window rarely used |
+| **A bachelor group in a flat** | The people on the agreement: shares, splitting, chores, member changes | Building community matters little; no mess, no gate rituals |
+| **A family in a flat** | The agreement, rent and bills, repairs and who pays, the household's help at the gate, society rules, dependents with their own logins | Community, polls, attendance, meal counts: usually off entirely |
+| **A serviced apartment or short stay** | Extensions, housekeeping, invoices to the company, quick services | The record, community, and long-term features barely apply |
+| **A senior residence** | Wellbeing seen by family, the events calendar, care staff in the directory, meals, payments by the children | Nothing that assumes independence of money or mobility |
+
+Two rules keep this honest. The app never shows a family in a flat the machinery of a hostel, and it never gives a hostel student a stripped version of anything. Different homes get different apps; nobody gets a lesser one.
 
 ## Deferred, and what revives each
 
@@ -313,7 +351,7 @@ And one commercial truth shapes everything: this app is part of what the propert
 |---|---|
 | Compliance leaderboards ranking tenants | Public grading of private behavior is shame in a game costume |
 | Share-to-unlock, referral walls, contact harvesting | Advocacy is a by-product of pride; a toll kills both |
-| A browse-other-properties shelf inside this door | The landlord's channel will not advertise his competitors; discovery lives in the open door |
+| A section for browsing other properties inside this door | The landlord's channel will not advertise his competitors; discovery lives in the open door |
 | Tenant activity dashboards for landlords | The two channel rules forbid it; a tenant's app usage is theirs |
 | App-generated pending tasks | The app suggests; only the tenant assigns themselves work |
 | Money custody in expense splitting | We keep the ledger; banks move the money |
