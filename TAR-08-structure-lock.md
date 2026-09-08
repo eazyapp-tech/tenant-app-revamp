@@ -65,6 +65,20 @@ The third tab is Tickets. And the app has never handled a `gatepass` key: search
 
 So the real behaviour is worse than losing complaints. A property that runs a gate gives its tenants a **three-tab app**: Home, Accounts, Profile. Complaints is gone, the gate never arrives, and nobody decided any of it. TAR-07 names complaints as part of the trust floor that never switches off. It switches off, it switches off by accident, and it takes the slot with it.
 
+```mermaid
+flowchart LR
+  S["Server builds four tabs<br/>Home · Accounts · Tickets · Profile"]
+  S -->|"property has entry and exit settings"| G["slot 3 overwritten<br/>with key: gatepass"]
+  S -->|"property is on the ten-account list"| V["slot 3 overwritten<br/>with key: services"]
+  S -->|"neither"| K["four tabs reach the app"]
+  G --> A{"the app's switch<br/>knows eight keys"}
+  V --> A
+  A -->|"services: known"| T["Services tab renders<br/>Tickets is gone"]
+  A -->|"gatepass: no case,<br/>falls through"| X["nothing renders<br/>Home · Accounts · Profile"]
+```
+
+*What the picture shows: the server and the app each do something reasonable, and the tab disappears in the gap between them. Nobody wrote "remove complaints." It is the arrow that falls through.*
+
 **Three. Food and attendance can never reach the bar of a standard property.**
 
 The same code path offers one replacement that works, Services, and one that renders as nothing, and only for the third slot. Food and Attendance are reachable in the bar only through a white-label configuration. TAR-00, the vision document, promoted both into the core set for one reason: they are the daily habits, and daily habit is what adoption is made of. The two features chosen because they bring students back every day cannot appear in the navigation of a standard RentOk property.
@@ -142,6 +156,17 @@ This is the honest answer to the question you asked, which was what a tab does w
 
 **The property's tab can never evict a fixed one.** This is the defect shipping today, written as a rule so it cannot ship again.
 
+```mermaid
+flowchart LR
+  F["any feature the property runs<br/>say, Food"]
+  T["the property's tab"] -->|"when the tab exists"| F
+  H["Home"] -->|"when it is happening now,<br/>or just changed"| F
+  N["a push or a message"] -->|"deep link"| F
+  I["the index, inside Me<br/>same place, same order, everywhere"] ==>|"always"| F
+```
+
+*What the picture shows: four ways into any feature, and only the bold one is guaranteed. The tab can be absent, Home is composed, a notification is a moment. The index is why a changing bar cannot hide anything.*
+
 ### The labels, and why they are not the module names
 
 The tree below uses TAR-07's own names for everything. The tab labels are different on purpose, and this is a decision worth arguing with.
@@ -167,6 +192,20 @@ You asked whether the money leads or the day leads. The answer is the day, and I
 
 **The rule produces both behaviours with no exception written.** In a hostel the day fills the screen and money is a calm line saying the fees are paid through March. In a family flat there is no rhythm block at all, so money is what remains and it leads by itself. I did not have to write a family-flat special case, and that is the evidence the rule is the right shape rather than a compromise between two answers.
 
+```mermaid
+flowchart TB
+  subgraph H["A hostel student, father pays, dinner at eight"]
+    direction TB
+    h1["1 · live strip: dinner being served"] --> h2["2 · what changed: a notice went up"] --> h3["3 · rhythm: tonight's menu, today's mark"] --> h4["4 · money: one quiet line, fees paid through March"]
+  end
+  subgraph F["A family in a flat, rent due Friday"]
+    direction TB
+    f1["1 · live strip: nothing happening, not shown"] --> f2["2 · what changed: the plumber replied"] --> f4["4 · money: a card, rent due in three days"]
+  end
+```
+
+*What the picture shows: the same four-block rule, two homes. The family's screen has no block three because there is no rhythm to show, and money grows from a line to a card because something is due. Nothing was special-cased. The rule did both.*
+
 **Money is never hunted for and never shouts when there is nothing to shout about.** That is the second half of the answer to your question. It is always on the first screen and always in the middle of the bar. Its size is set by whether anything is actually due, which also settles TAR-07's sponsored tenant, whose company pays and who therefore sees a home and never a nag about money that is not theirs.
 
 **And one number explains why the day leads at all.** Across roughly four hundred thousand tenants, between six and nine in every hundred open the app in a month. That is a monthly-app number. What makes an app daily is not money and it is not food specifically. It is that something changed since you last looked, which is why that is block two and not block four.
@@ -178,6 +217,76 @@ You asked whether the money leads or the day leads. The answer is the day, and I
 # The tree
 
 Six parts. What happens before the tabs exist, the five tabs themselves, the hub that is not a tab, the flows that take over the whole screen, the index that guarantees nothing is hidden, and what is deliberately outside the tree.
+
+The map first, at the level of sections, with the first mark as colour. Green can be drawn today. Amber needs its sequence settled first. Grey is mixed. The node lists below are what you argue with; this is what you hold while arguing.
+
+```mermaid
+flowchart TB
+  classDef draw fill:#8FCBAD,stroke:#2C6B4F,color:#14181B
+  classDef solve fill:#EBB48C,stroke:#9E4A18,color:#14181B
+  classDef mixed fill:#CFC9DC,stroke:#5B4E72,color:#14181B
+  subgraph A["Part A · before the tabs"]
+    A0["A0 before there is a tenancy"]:::solve
+    A1["A1 the entrance"]:::solve
+    A2["A2 joining, before the keys"]:::solve
+    A3["A3 day one"]:::solve
+  end
+  subgraph B["Part B · the five tabs"]
+    direction LR
+    subgraph T1["Home"]
+      B1["four blocks"]:::solve
+    end
+    subgraph T3["My PG · switched"]
+      B31["food"]:::mixed
+      B32["presence"]:::solve
+      B33["guests, visitors, deliveries"]:::solve
+      B34["notice board"]:::solve
+      B35["house facts"]:::draw
+      B36["community"]:::solve
+      B37["people on your agreement"]:::solve
+      B38["academic calendar"]:::solve
+      B39["what is coming to your home"]:::draw
+    end
+    subgraph T2["Money"]
+      B21["what stands right now"]:::mixed
+      B22["paying"]:::mixed
+      B23["what happened"]:::draw
+      B24["what is coming"]:::solve
+      B25["other bills"]:::solve
+    end
+    subgraph T4["Help"]
+      B41["something is wrong"]:::mixed
+      B42["the conversation"]:::solve
+      B43["feedback"]:::solve
+      B44["the directory"]:::draw
+    end
+    subgraph T5["Me"]
+      B51["my home"]:::draw
+      B52["my documents"]:::mixed
+      B53["personal details"]:::solve
+      B54["my record"]:::solve
+      B55["the passport"]:::solve
+      B56["the memory"]:::draw
+      B57["activity log"]:::draw
+      B58["family's access"]:::solve
+      B59["my tenancy"]:::solve
+      B510["membership"]:::solve
+      B511["bringing people in"]:::solve
+      B512["my account"]:::draw
+    end
+  end
+  subgraph C["Part C · the hub, not a tab"]
+    direction LR
+    C1["from your property"]:::draw
+    C2["from your city"]:::solve
+    C3["from RentOk"]:::solve
+    C4["offers"]:::draw
+  end
+  A --> B
+  B --> C
+```
+
+*Thirty-nine sections. Ten green, five grey, twenty-four amber. Part D's eleven flows are all amber and are listed as a table rather than drawn, because where a flow starts is already a sentence.*
 
 ---
 
@@ -567,6 +676,8 @@ These live in Me and not in the property's tab on purpose. The property's tab is
 
 Rent Day, the membership's visible moment on the first of the month, lives in Money where the payment happens, not here.
 
+**The fee earns itself where the benefit lands, not in this section.** The bundle is experienced in four places: bills and the tax pack in Money, the credit story in Me, member offers in the hub. This section says what the fee buys once; the moment of use says it every time. No fee on this payment, because you are a member. Your tax pack, because you are a member. A rule across nodes rather than a node, and without it the fee is a line in settings that nobody connects to anything.
+
 #### B5.11 · Bringing people in
 
 **Solve it first.**
@@ -597,6 +708,22 @@ Everything a tenant can **get**: services from the property, services from the c
 **Why it is one object rather than three sections.** Everything else in this app is about **this tenancy**: the money, the complaints, the documents, the food, the notices. The hub is the only surface about **this life**. The tiffin service, the tax help, the insurance and the movers are not part of the tenancy at all.
 
 That line is the seam between the doors. TAR-06's whole everyday layer for a renter with no property is this same class of thing. So the hub is built once and appears in all three doors, with the property shelf present only where a property exists. Written as a door one section, we would build the same shelf twice and it would drift inside a month.
+
+```mermaid
+flowchart LR
+  subgraph HUB["the hub · one object"]
+    direction TB
+    C1["from your property<br/>services, amenities, the concierge"]
+    C2["from your city<br/>partnered vendors"]
+    C3["from RentOk, because you rent<br/>tax, insurance, movers, legal"]
+    C4["offers<br/>a brand's deal, kept apart"]
+  end
+  D1["door one<br/>the RentOk app"] -->|"all four shelves"| HUB
+  D2["door two<br/>a brand's app"] -->|"all four, in the brand's voice"| HUB
+  D3["door three<br/>open for all"] -->|"three shelves: no property, so no first shelf"| HUB
+```
+
+*What the picture shows: three doors, one hub. Only the first shelf depends on a property existing. Everything else is the renting life, and it is the same in all three.*
 
 **How a tenant reaches it.** TAR-07 already decided this and I had it backwards in an earlier draft. The moment does the introducing: movers when someone is leaving or arriving, tax help when receipts are being downloaded in tax season, insurance at move-in. Offered once, where the need has just appeared, and free to ignore. Browsing the whole hub on purpose is the second path, not the first, reached from Home and from the index. In a premium co-living, where the amenities are half of what the resident paid for, the property's tab opens into the hub filtered to that property: one object, a second door into it, nothing duplicated.
 
@@ -674,7 +801,37 @@ Three rules on it:
 
 ## Part F · What is deliberately not in this tree
 
-Nothing is silently dropped. These are the absences, each with its reason.
+Nothing is silently dropped. These are the absences, each with its reason. The picture first, because the shape of what the three doors share is the case for one document rather than three.
+
+```mermaid
+flowchart LR
+  subgraph S["shared by all three doors"]
+    direction TB
+    s1["Home"]
+    s2["Money"]
+    s3["Help"]
+    s4["Me"]
+    s5["the hub"]
+  end
+  subgraph D12["doors one and two only<br/>door two is door one in the brand's voice, within the brand's limits"]
+    direction TB
+    p1["the property's tab"]
+    p2["welcome, joining, day one"]
+    p3["presence, food, the notice board"]
+    p4["my family's access"]
+  end
+  subgraph D3["door three only"]
+    direction TB
+    o1["browse, and the AI Broker"]
+    o2["the AI Lawyer"]
+    o3["the landlord line and the maintenance log"]
+    o4["the flat and flatmate board"]
+    o5["the passport, as the product"]
+  end
+  D12 ==>|"the record built by living here<br/>becomes"| o5
+```
+
+*What the picture shows: four tabs and the hub are the same app in every door. Doors one and two add the property. Door three adds the search for the next home and the passport, and the bold arrow is the whole strategy: what a tenant builds in the first two doors is what the third one sells.*
 
 ### The open door's own surfaces
 
@@ -759,6 +916,8 @@ The roll-up of every part marked **new**, so the engineering conversation has a 
 15. Bill payments beside the rent.
 16. Credit bureau reporting with consent, and a score check inside the app.
 
+17. **The manager app's half of the property's tab**, and this one is a product ask rather than a service ask. Everything in that tab is owner-authored: house facts, notices, what is switched on. An owner who fills nothing gets a thin tab with their own name on it, which is the opposite of the owner pride TAR-00 asks for. This document has just made "an owner can fill their tab in five minutes" a first-class requirement on the other app.
+
 **What is deliberately not asked for yet:** anything on TAR-07's deferred list, and anything the research round could still change. Community and polls are the largest example. They have a place in the tree so the shape is visible, and they have no backend ask until tenants say they want them.
 
 ---
@@ -769,7 +928,7 @@ Bring your red pen on the tree and a written answer to the eight. Half a day: th
 
 One item is not written down and belongs in the room rather than on paper: I want to raise a change to the tenant-type screen you sketched, once the tree is marked up.
 
-Then the theme, and then design in pieces, in the order this document already implies. Everything marked **Draw it** starts the following Monday. Everything marked **Solve it first** goes back through a flow round before a designer touches it.
+Then two things at once, not one after the other. The theme, which is rung seven. And the first flow round, which is Part A: the entrance, joining, and day one. Every section there is marked Solve it first, TAR-00's guardrail is first-run completion, and the vision's first unforgettable moment is the first open. The structure of getting in cannot wait for the theme, because adoption is decided before a single tab exists. Everything marked **Draw it** starts the following Monday. Everything else marked **Solve it first** queues behind Part A.
 
 ## Changelog
 
