@@ -76,8 +76,8 @@ The same code path offers one replacement that works, Services, and one that ren
 ## The bottom bar
 
 ```
-Home   ·   Money   ·   [ My PG ]   ·   Help   ·   Me
-                          the one slot that changes
+Home   ·   [ My PG ]   ·   Money   ·   Help   ·   Me
+             the one slot that changes
 ```
 
 **Four never change. One changes.**
@@ -122,7 +122,11 @@ Two things a reader might expect here and will not find. The directory of who to
 
 Naming it for the home rather than the feature does a second job. TAR-00 says the property's logo and name lead the app, not RentOk's. Today a property logo does appear, but only in the property switcher and the account chooser, two screens a tenant visits almost never. It is stored at login and then fetched and thrown away without being drawn: `profile_my_renting_info_section_card.dart:23` calls `PrefsUtils.getPgLogo();` on a line of its own and discards what comes back. The promise is kept nowhere a tenant actually looks. Here it is carried by a permanent tab that belongs to the place they live.
 
-**Why the middle.** It is the easiest place on the bar for a thumb, and it means only Help moves position when the tab is absent. Home and Money are always first and second. Me is always last.
+**Why second, and why Money takes the middle.** Home then My PG is the identity pair: this is your building's app, said in the first two positions before any utility, which is TAR-00's belonging-first rule made structural. In a white-label app the bar reads Home, then the brand's own word, then Money, and that is the owner-pride feature rather than a logo in a corner.
+
+Money takes the middle because the middle is the easiest spot on the bar for a thumb, and the tab that deserves it is the one behind the most consequential tap of the month. Home carries the daily taps, tonight's dinner and what changed, so the property's tab is a destination rather than a reflex. Every app on TAR-02's reference bar puts its primary money action in the middle for the same reason.
+
+The cost is stability. When the property's tab is absent, Money and Help each shift one place left instead of only Help. No tenant meets that shift on an ordinary day: it happens when an owner switches something on, which already gets a card on Home, or when a tenant moves between properties. Home is always first and Me is always last, and support can say "the rupee icon" as easily as "the second tab."
 
 ### When a property has nothing to put in it, the bar is four
 
@@ -163,7 +167,7 @@ You asked whether the money leads or the day leads. The answer is the day, and I
 
 **The rule produces both behaviours with no exception written.** In a hostel the day fills the screen and money is a calm line saying the fees are paid through March. In a family flat there is no rhythm block at all, so money is what remains and it leads by itself. I did not have to write a family-flat special case, and that is the evidence the rule is the right shape rather than a compromise between two answers.
 
-**Money is never hunted for and never shouts when there is nothing to shout about.** That is the second half of the answer to your question. It is always on the first screen and always in the second tab. Its size is set by whether anything is actually due, which also settles TAR-07's sponsored tenant, whose company pays and who therefore sees a home and never a nag about money that is not theirs.
+**Money is never hunted for and never shouts when there is nothing to shout about.** That is the second half of the answer to your question. It is always on the first screen and always in the middle of the bar. Its size is set by whether anything is actually due, which also settles TAR-07's sponsored tenant, whose company pays and who therefore sees a home and never a nag about money that is not theirs.
 
 **And one number explains why the day leads at all.** Across roughly four hundred thousand tenants, between six and nine in every hundred open the app in a month. That is a monthly-app number. What makes an app daily is not money and it is not food specifically. It is that something changed since you last looked, which is why that is block two and not block four.
 
@@ -713,7 +717,7 @@ Each one is a fork, my pick and what that pick costs, and the thing I need you t
 
 **1. Is the floor right?** Home, Money, Help and Me in every app always, plus one slot whose contents the property decides, and four tabs where a property has nothing to put in that slot. The cost of a floor this wide is that a hostel student carries a Money tab that stays quiet all year. Do you accept four fixed and one changing, and is four the right floor?
 
-**2. Where does the changing slot sit?** I put it third, in the middle, because it is the easiest place on the bar for a thumb and because only Help shifts position when the slot is absent. The cost is that Money is locked at position two even for the tenant who never opens it. Third, or somewhere else?
+**2. Where does the changing slot sit?** I put it second, beside Home, so the first two positions say this is your building's app, and gave the middle to Money because that is the easiest thumb spot and the most consequential tap. The cost is that when the tab is absent, two tabs shift left instead of one. An earlier draft had it third for that stability, and I moved it because the stability was bought for an event no tenant meets on an ordinary day. Second, or back to third?
 
 **3. Should the changing slot be labelled for the home, or for what is in it?** I label it for the home, so it reads My PG or My Flat or the brand's own word, which turns the property's identity into a permanent surface. The cost is that a hostel's food menu sits one tap further away than it would under a tab called Food. Which way?
 
