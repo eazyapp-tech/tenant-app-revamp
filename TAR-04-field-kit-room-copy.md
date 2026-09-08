@@ -2,6 +2,8 @@
 
 **This is the copy you carry. Everything in it is something you say or something you do.**
 
+Read it on a phone here: https://claude.ai/code/artifact/a70563d9-a5ed-41e3-a16d-771703f1fae4
+
 The other copy, the Analysis Copy, holds what the study is for, what we think we will find, and what happens to the answers afterwards. Read it once before you start. Never take it into a room. Nothing in it changes a single word you say.
 
 ## Start here
