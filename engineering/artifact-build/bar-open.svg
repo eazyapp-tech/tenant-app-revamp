@@ -1,0 +1,43 @@
+<figure><svg viewBox="0 0 760 278" role="img" aria-label="The open door's bottom bar: Home, Find a home, Money, Help, Me. Four tabs never move. The second is filled by the renter's own stage: Find a home while looking, My Flat while sharing with others, nothing at all when living alone so the bar is four, and Find a home again as an agreement nears its end." font-family="IBM Plex Sans, system-ui, sans-serif">
+<g fill="none" stroke="currentColor" stroke-width="1.25">
+<rect x="40" y="28" width="120" height="56" rx="6"/>
+<rect x="312" y="28" width="120" height="56" rx="6"/>
+<rect x="448" y="28" width="120" height="56" rx="6"/>
+<rect x="584" y="28" width="120" height="56" rx="6"/>
+</g>
+<rect x="176" y="28" width="120" height="56" rx="6" fill="#3E7CB1" fill-opacity="0.14" stroke="#3E7CB1" stroke-width="1.75"/>
+<g fill="currentColor" font-size="14" font-weight="600" text-anchor="middle">
+<text x="100" y="61">Home</text>
+<text x="236" y="61" fill="#3E7CB1">Find a home</text>
+<text x="372" y="61">Money</text>
+<text x="508" y="61">Help</text>
+<text x="644" y="61">Me</text>
+</g>
+<line x1="236" y1="84" x2="236" y2="102" stroke="#3E7CB1" stroke-width="1.25"/>
+<text x="236" y="118" font-size="12" fill="#3E7CB1" text-anchor="middle">the one slot that changes</text>
+<text x="40" y="118" font-size="12" fill="currentColor" opacity="0.7">filled by the renter's own stage, not by any landlord</text>
+<g font-size="12.5" fill="currentColor">
+<text x="40" y="156" font-weight="600">Looking</text>
+<text x="40" y="188" font-weight="600">Sharing a flat</text>
+<text x="40" y="220" font-weight="600">Living alone</text>
+<text x="40" y="252" font-weight="600">Agreement ending</text>
+</g>
+<g fill="none" stroke="#3E7CB1" stroke-width="1.25">
+<rect x="176" y="141" width="120" height="22" rx="4"/>
+<rect x="176" y="173" width="120" height="22" rx="4"/>
+<rect x="176" y="205" width="120" height="22" rx="4" stroke-dasharray="4 3" stroke="currentColor" opacity="0.5"/>
+<rect x="176" y="237" width="120" height="22" rx="4"/>
+</g>
+<g font-size="12" fill="#3E7CB1" text-anchor="middle">
+<text x="236" y="156">Find a home</text>
+<text x="236" y="188">My Flat</text>
+<text x="236" y="220" fill="currentColor" opacity="0.6">no tab</text>
+<text x="236" y="252">Find a home</text>
+</g>
+<g font-size="12" fill="currentColor" opacity="0.85">
+<text x="312" y="156">the search, the Broker, visits, the application</text>
+<text x="312" y="188">shares, splits, chores, the people on the agreement</text>
+<text x="312" y="220">the bar is four: Home · Money · Help · Me</text>
+<text x="312" y="252">the next search, because that is where they are going</text>
+</g>
+</svg><figcaption>The open door's bar. Four tabs never move. The second is filled by where the renter is in their renting life, not by a landlord, and a renter passes through it two or three times.</figcaption></figure>
