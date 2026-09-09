@@ -13,10 +13,13 @@ Design, product, and research documents for the new RentOk tenant app: a fresh b
 1. **[TAR-01 · Brief](TAR-01-brief.md)**: the product bet in detail: how the app spreads, personalization in practice, build phases, risks.
 2. **[TAR-02 · Design Language](TAR-02-design-language.md)**: how it looks, moves, and speaks: the laws, the typeface, color, motion, states, voice, and the named bans.
 3. **[TAR-03 · What Each Part Must Become](TAR-03-what-each-part-must-become.md)**: module by module: the ambition, what the first draft taught us, what research must validate.
-4. **[TAR-04 · Research Kit](TAR-04-research-kit.md)**: interview guides and concept tests for tenants, owners, and the internal team.
+4. **[TAR-04 · Field Kit, Room Copy](TAR-04-field-kit-room-copy.md)**: the copy that goes into the field. Who to interview and where, the three session lengths, what the interviewer never does, and every question for tenants, owners and the internal team. Nothing in it that does not change what the interviewer says or does.
+   **[TAR-04 · Field Kit, Analysis Copy](TAR-04-field-kit-analysis-copy.md)**: never goes into a room. What the round is for, the thirteen hypotheses, which question feeds which, and what happens to the answers. Read once before the round and again before writing anything up.
 5. **[TAR-05 · How Features Earn Their Place](TAR-05-how-features-earn-their-place.md)**: the persuasion layer: how features tenants would never ask for win their willing participation, across all three versions of the app.
 6. **[TAR-06 · Open for All: The Feature Map](TAR-06-open-for-all-feature-map.md)**: the lifestyle app for everyone who lives on rent, written as a renter's life moment by moment, with what we deferred and what we chose not to build.
 7. **[TAR-07 · The RentOk Tenant App: The Feature Map](TAR-07-standard-app-feature-map.md)**: the standard app for tenants in RentOk properties, written as a tenant's life moment by moment: the spine, the Family Window, the shared tenancy, the switchboard, and how this door earns.
+8. **[TAR-08 · The Structure Lock](TAR-08-structure-lock.md)**: where all of it sits. The bottom bar, what leads the home screen, and the whole app as a tree, with every part marked for whether a designer can start on it today and whether anything exists behind it. The document the structure session is run from.
+9. **[TAR-09 · The Structure Lock, Open Door](TAR-09-open-door-structure-lock.md)**: the same job for door three, the app for anyone who lives on rent whether or not their landlord has heard of us. Same five slots, but the changing one is composed by the renter's own stage rather than by a property. Every part marked for whether the standard app builds it or this door builds it alone, which is how the open door's real size is measured.
 
 ## Reference
 

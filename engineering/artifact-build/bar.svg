@@ -1,0 +1,46 @@
+<figure><svg viewBox="0 0 760 310" role="img" aria-label="The bottom bar: Home, My PG, Money, Help, Me. Four tabs never move. The second is named for the home and filled from what the property runs; in a hostel it holds food, presence, the gate, the notice board and outpass; in a co-living, events and community; in a bachelor flat, shares, chores, the split ledger and the people on the agreement; in a family flat, house facts, the society's notices and the help at the gate; where the property runs nothing it is absent and the bar is four." font-family="IBM Plex Sans, system-ui, sans-serif">
+<g fill="none" stroke="currentColor" stroke-width="1.25">
+<rect x="40" y="28" width="120" height="56" rx="6"/>
+<rect x="312" y="28" width="120" height="56" rx="6"/>
+<rect x="448" y="28" width="120" height="56" rx="6"/>
+<rect x="584" y="28" width="120" height="56" rx="6"/>
+</g>
+<rect x="176" y="28" width="120" height="56" rx="6" fill="#3E7CB1" fill-opacity="0.14" stroke="#3E7CB1" stroke-width="1.75"/>
+<g fill="currentColor" font-size="14" font-weight="600" text-anchor="middle">
+<text x="100" y="61">Home</text>
+<text x="236" y="61" fill="#3E7CB1">My PG</text>
+<text x="372" y="61">Money</text>
+<text x="508" y="61">Help</text>
+<text x="644" y="61">Me</text>
+</g>
+<line x1="236" y1="84" x2="236" y2="102" stroke="#3E7CB1" stroke-width="1.25"/>
+<text x="236" y="118" font-size="12" fill="#3E7CB1" text-anchor="middle">the one slot that changes</text>
+<g font-size="12.5" fill="currentColor">
+<text x="40" y="156" font-weight="600">A hostel</text>
+<text x="40" y="188" font-weight="600">A co-living</text>
+<text x="40" y="220" font-weight="600">A bachelor flat</text>
+<text x="40" y="252" font-weight="600">A family flat</text>
+<text x="40" y="284" font-weight="600">Runs nothing</text>
+</g>
+<g fill="none" stroke="#3E7CB1" stroke-width="1.25">
+<rect x="176" y="141" width="120" height="22" rx="4"/>
+<rect x="176" y="173" width="120" height="22" rx="4"/>
+<rect x="176" y="205" width="120" height="22" rx="4"/>
+<rect x="176" y="237" width="120" height="22" rx="4"/>
+<rect x="176" y="269" width="120" height="22" rx="4" stroke-dasharray="4 3" stroke="currentColor" opacity="0.5"/>
+</g>
+<g font-size="12" fill="#3E7CB1" text-anchor="middle">
+<text x="236" y="156">My Hostel</text>
+<text x="236" y="188">the brand's word</text>
+<text x="236" y="220">My Flat</text>
+<text x="236" y="252">My Flat</text>
+<text x="236" y="284" fill="currentColor" opacity="0.6">no tab</text>
+</g>
+<g font-size="12" fill="currentColor" opacity="0.85">
+<text x="312" y="156">food, presence, the gate, the notice board, outpass</text>
+<text x="312" y="188">events, community, what is coming to your home</text>
+<text x="312" y="220">shares, chores, the split ledger, the people on the agreement</text>
+<text x="312" y="252">house facts, the society's notices, the help at the gate</text>
+<text x="312" y="284">the bar is four: Home · Money · Help · Me</text>
+</g>
+</svg><figcaption>The bar, and what the second slot becomes in four homes. Four tabs never move. The second is named for the home and filled from what the property runs; where the property runs nothing, it is not there.</figcaption></figure>
