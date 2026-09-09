@@ -1,5 +1,7 @@
 # TAR-04 · The Field Kit · Room Copy
 
+*Last updated 9 September 2026. Owner: Sanchay. Status: ready to run. Round one has not started.*
+
 **This is the copy you carry. Everything in it is something you say or something you do.**
 
 Read it on a phone here: https://claude.ai/code/artifact/a70563d9-a5ed-41e3-a16d-771703f1fae4

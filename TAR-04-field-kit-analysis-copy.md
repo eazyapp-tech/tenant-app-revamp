@@ -1,5 +1,7 @@
 # TAR-04 · The Field Kit · Analysis Copy
 
+*Last updated 9 September 2026. Owner: Sanchay. Status: ready to run. Round one has not started, so no hypothesis is yet marked supported, challenged or open.*
+
 **This copy never goes into a room.** It holds what the study is for, the thirteen things we think we will find, which question feeds which, and what happens to the answers once the sessions are done. Read it once before the first session and again before you write anything up.
 
 The questions themselves live in the Room Copy. They are numbered there, and the table in section M below is the only place the question numbers, the hypotheses and the outputs are joined up. If a question is renumbered in the Room Copy, fix it here in the same edit or the two copies come apart.

@@ -20,7 +20,7 @@ Three paths, each designed on purpose:
 
 **To friends in other properties.** This runs on things worth showing: a receipt that looks like a document worth keeping, a streak worth a screenshot, a menu that makes a friend ask which app that is. The friend whose landlord is not on RentOk is not a dead end. They are the open-for-all door's first real user.
 
-**To the tenant's own landlord.** A tenant asking their landlord "why don't we have this?" is a warm sales lead that costs nothing. The current app actually contains an invite-your-property flow, but it is hidden from white-label users and its button does nothing (Verified). The new app makes this path first-class for everyone.
+**To the tenant's own landlord.** A tenant asking their landlord "why don't we have this?" is a warm sales lead that costs nothing. The current app has two places where a tenant can do this, and both are broken, in opposite ways (Verified). One of them works, but it only appears on the plain RentOk build, so every tenant on a white-labelled app is excluded, and those are the properties where the app is used most. The other is visible to everyone, offers five hundred rupees for the introduction, and its button does nothing at all. Between them the path is dead, and a tenant who taps the offer is left with silence. The new app makes this path first-class for everyone.
 
 What makes a tenant recommend the app is not a referral code. It is pride in how the app presents their home, a record that says something about them, features that need their friends, and one story stronger than all of them: "this app got my deposit back." Deposit disputes are the most painful ending in Indian renting. A tenant protected by timestamped move-in photos will tell everyone they know.
 

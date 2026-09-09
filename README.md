@@ -4,11 +4,28 @@ Design, product, and research documents for the new RentOk tenant app: a fresh b
 
 **Written for everyone on this project**: leadership, product, designers, design interns, researchers, and property owners we share these with. Plain language throughout. Technical material lives in `engineering/` and `research/` for those who need it.
 
+## Where this work actually stands
+
+Srijan's order was: research insights first, then hypotheses, then the audience types with the differences assigned to his four levers, then we sit and read it together, then scope, then structure, then theme, then design last and in pieces. **The list below is a reading order, not a climbed ladder.** Where each of his rungs actually stands today:
+
+| # | The rung | Where it stands |
+|---|---|---|
+| 1 | Research insights, from real calls | **Not done.** TAR-04 is the kit for the round, not its findings. Internal sessions start the week of 9 September; tenant and owner sessions follow the structure session. There is no insight ledger yet, and this was the first thing asked for. |
+| 2 | Hypotheses | **Written, untested.** The thirteen are in TAR-04's Analysis Copy, waiting on rung one to support or challenge them. |
+| 3 | Audience types, and what is common and what differs | **Not done.** Three competing lists exist: four from Srijan, five in TAR-01, six from Nitish. None comes from evidence. Setting the number from the ledger is the round's job. |
+| 4 | Sitting together and reading it | **Not done.** That is the half day on the 15th or 16th, which everything here is written for. |
+| 5 | Scope | **Done for two doors of three.** TAR-07 for the standard app, TAR-06 for the open door. The white-label door is not scoped. |
+| 6 | Structure | **Proposed, not agreed.** TAR-08 and TAR-09. This is the most finished work in the repo and the rung furthest ahead of its own evidence. |
+| 7 | Theme | **Not started.** TAR-02 is a written design language, not the theme lock, and it moves if the bar moves in the room. |
+| 8 | Design, last and in pieces | **Not started.** Nobody opens Figma before rung four. |
+
+**TAR-08 and TAR-09 are proposals written ahead of the research on purpose.** The ask was for something to argue with three days before the session, not a blank page. They are the strongest documents here and the least evidenced, both at once. Nothing in them survives the room automatically.
+
 ## Start here
 
 **[TAR-00 · Vision and Requirements](TAR-00-vision-and-requirements.md)**: what we are building, why, for whom, the promises we've made, and what success looks like. Read this first; everything else hangs off it.
 
-## Then, in order
+## Then, in reading order
 
 1. **[TAR-01 · Brief](TAR-01-brief.md)**: the product bet in detail: how the app spreads, personalization in practice, build phases, risks.
 2. **[TAR-02 · Design Language](TAR-02-design-language.md)**: how it looks, moves, and speaks: the laws, the typeface, color, motion, states, voice, and the named bans.
