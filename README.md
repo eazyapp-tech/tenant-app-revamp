@@ -19,6 +19,7 @@ Design, product, and research documents for the new RentOk tenant app: a fresh b
 6. **[TAR-06 · Open for All: The Feature Map](TAR-06-open-for-all-feature-map.md)**: the lifestyle app for everyone who lives on rent, written as a renter's life moment by moment, with what we deferred and what we chose not to build.
 7. **[TAR-07 · The RentOk Tenant App: The Feature Map](TAR-07-standard-app-feature-map.md)**: the standard app for tenants in RentOk properties, written as a tenant's life moment by moment: the spine, the Family Window, the shared tenancy, the switchboard, and how this door earns.
 8. **[TAR-08 · The Structure Lock](TAR-08-structure-lock.md)**: where all of it sits. The bottom bar, what leads the home screen, and the whole app as a tree, with every part marked for whether a designer can start on it today and whether anything exists behind it. The document the structure session is run from.
+9. **[TAR-09 · The Structure Lock, Open Door](TAR-09-open-door-structure-lock.md)**: the same job for door three, the app for anyone who lives on rent whether or not their landlord has heard of us. Same five slots, but the changing one is composed by the renter's own stage rather than by a property. Every part marked for whether the standard app builds it or this door builds it alone, which is how the open door's real size is measured.
 
 ## Reference
 
